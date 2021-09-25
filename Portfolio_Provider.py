@@ -1,20 +1,18 @@
+"""
+This file is used for web scraping companies and their required metadata.
+Populate all required information from Screener.in website.
+Current Limit is 100 ie gather relevant information of 100 companies.
+"""
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-"""
-Input : A list of string values
-O/P : JSON Object
-Portfolio Info consists
-:- Quarterly Report
-:- Net Value
-:- Sector (Seasonal dependencies)
-:- Involved Stock name
-:- Cash Flow
-:- Balance Sheet
-"""
+# Refer to JSON_Dealer to learn about expected order and format :)
+companyList = list()
+def metadataCompanies():
+    return companyList
 
-# Start the driver
+#Start your code from here.
 with webdriver.Firefox() as driver:
     # Open URL
     driver.get("https://seleniumhq.github.io")
