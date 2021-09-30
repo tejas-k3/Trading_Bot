@@ -28,11 +28,11 @@ import json
 
 def convertToDictionary(stringValue):
     """
-    This function will return dictionary of lists.
+    This function will return dictionary of strings.
     @param stringValue
-        String Value which needs conversion (Quarterly Results, Balance Sheets)
+        List of string values which needs conversion (Quarterly Results, Balance Sheets).
     @return dictionary
-        Dictionary of the same
+        Dictionary of the same.
     Example:
     I/P:[ (type is string)
         'OPM: [3, 6, 19, 14, 16, 18, 17, 12, 18, 25, 22, 22]', 
@@ -46,8 +46,6 @@ def convertToDictionary(stringValue):
         }
     """
     info = dict([report.split(': ') for report in stringValue])
-    for value in info.items():
-        value = json.loads(value)
     return info
 
 def convertToJSONList(companiesList):
