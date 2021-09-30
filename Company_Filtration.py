@@ -3,6 +3,7 @@ This file holds logic for filtration of companies based on metric evaluation.
 """
 import itertools as it
 
+# Configurable variables for tuning the logic to have better confidence
 ROELowerLimit=15
 ROEUpperLimit=20
 ROE_HighlyConfidenceValue = 1.5
@@ -13,7 +14,8 @@ dividendYieldLowerLimit = 0.40
 dividendYieldUpperLimit = 0.75
 dividendYield_HighlyConfidenceValue = 1.5
 dividendYield_FairlyConfidenceValue = 1.0
-def profitableCompany(companies):
+
+def profitableCompanies(companies):
     """
     This function will filter companies.
     @param companies

@@ -48,7 +48,7 @@ def convertToDictionary(stringValue):
     info = dict([report.split(': ') for report in stringValue])
     return info
 
-def convertToJSONList(companiesList):
+def convertcompanyToJSONList(companiesList):
     """
     This function will converts list of company metadata strings to list of JSON objects.
     @param companiesList
@@ -75,7 +75,7 @@ def convertToJSONList(companiesList):
             }
         companies.append(json.dumps(companyStock))
 
-def convertToDictionaryList(companyList):
+def convertcompanyToDictionaryList(companyList):
     """
     This function will converts list of JSON objects to list of dictionary items.
     @param companiesList
