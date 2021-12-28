@@ -2,29 +2,6 @@
 This file is used for all JSON related functionality for entire project.
 """
 import json
-# exampleCompanyStock =  {
-#     "Name":"HLE Glascoat Ltd",      #NAME
-#     "Market Cap":8589,              #Current Market Cap in crores
-#     "Current Price":6381,           #Current price in INR
-#     "Current High":6750,            #Current High in INR
-#     "Current Low":1287,             #Current Low in INR
-#     "ROE":41.4,                     #Current Return on Equity (profitability)
-#     "Dividend Yield": "0.06",
-#     "Sector": "Capital Goods-Non Electrical Equipment",
-#     "Stock Name": "HLEGLAS",
-#     "Quarterly Results":            #Should be of last 12 quarters
-#     {
-#         "OPM": [10, 9, 15, 16, 15, 18, 17, 17, 17, 22, 18, 19]
-#         "Net Profit": [1, 3, 12, 7, 9, 11, 11, 6, 11, 17, 18, 14],
-#         "EPS": [2.22, 2.22, 19.14, 11.51, 14.02, 8.38, 8.33, 4.80, 8.77, 12.94,	13.67, 10.55]
-#     },
-#     "Balance Sheet":                #Yearly balance reports in INR Crores
-#     {
-#         "Reserves": [10, 11, 13, 15, 18, 19, 21, 41, 45, 24, 52, 140],
-#         "Fixed Assets": [19, 19,22, 22, 22, 20, 23, 26, 25, 80, 88, 114]
-#     },
-#     "Cash Flows": [-0, -0, 0, -0, -0, 0, -0, 1, 0, 5, -5, 9]   #Yearly Cash Flow in INR Crores
-# }
 
 def convertToDictionary(stringValue):
     """
@@ -48,32 +25,29 @@ def convertToDictionary(stringValue):
     info = dict([report.split(': ') for report in stringValue])
     return info
 
-def convertcompanyToJSONList(companiesList):
+def convertcompanyToJSON(company):
     """
-    This function will converts list of company metadata strings to list of JSON objects.
-    @param companiesList
+    This function will converts company information strings to JSON object.
+    @param company
         List of strings having companies metadata
-    @return companies
-        List of JSON objects holding companies information
+    @return companyMetaData
+        JSON object of company's metadata
     """
-    companies = list()
-    for company in companiesList:
-        companyStock =  {
-            "Name":company[0],
-            "Market Cap":int(company[1]),
-            "Current Price":int(company[2]),
-            "Current High":int(company[3]),
-            "Current Low":int(company[4]),
-            "ROE":int(company[5]),
-            "Current Price":int(company[6]),
-            "Divident Yield":float(company[7]),
-            "Sector": company[8],
-            "Stock Name": company[9],
-            "Quarterly Results": convertToDictionary(company[10]),
-            "Balance Sheet": convertToDictionary(company[11]),
-            "Cash Flows": json.loads(company[12])
-            }
-        companies.append(json.dumps(companyStock))
+    companyMetaData =  {
+        "Name":company[0],
+        "Market Cap":float(company[1]),
+        "Current Price":float(company[2]),
+        "Current High":float(company[3]),
+        "Current Low":float(company[4]),
+        "ROE":float(company[5]),
+        "Divident Yield":float(company[6]),
+        "Sector": company[7],
+        "Stock Name": company[8],
+        "Quarterly Results": convertToDictionary(company[9]),
+        "Balance Sheet": convertToDictionary(company[10]),
+        "Cash Flows": company[11]
+        }
+    return json.dumps(companyMetaData)
 
 def convertcompanyToDictionaryList(companyList):
     """
