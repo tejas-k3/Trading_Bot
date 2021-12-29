@@ -2,6 +2,7 @@
 This file is used for all JSON related functionality for entire project.
 """
 import json
+import logging as LOGGER
 
 def convertToDictionary(stringValue):
     """
@@ -22,6 +23,7 @@ def convertToDictionary(stringValue):
         "EPS": [2.22, 2.22, 19.14, 11.51, 14.02, 8.38, 8.33, 4.80, 8.77, 12.94,	13.67, 10.55]
         }
     """
+    LOGGER.info("Converted string values to dictionary.")
     info = dict([report.split(': ') for report in stringValue])
     return info
 
@@ -47,6 +49,7 @@ def convertcompanyToJSON(company):
         "Balance Sheet": convertToDictionary(company[10]),
         "Cash Flows": company[11]
         }
+    LOGGER.info("Converted {} to schema format.".format(company[0]))
     return json.dumps(companyMetaData)
 
 def convertcompanyToDictionaryList(companyList):
@@ -57,4 +60,5 @@ def convertcompanyToDictionaryList(companyList):
     @return companies
         List of dictionary values holding companies information
     """
+    LOGGER.info("Converting JSON company list to python dictionary.")
     return json.load(companyList)

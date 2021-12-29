@@ -10,6 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 # Options TO HIDE
 from selenium.webdriver.chrome.options import Options
+import logging as LOGGER
 
 import JSON_Dealer
 # Path to chrome binary
@@ -34,11 +35,11 @@ def openWeb(url):
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=%s" % "1920,1080")
     chrome_options.binary_location = CHROME_PATH
-    # Chrome instance for webdriver
     driver = webdriver.Chrome(executable_path=DRIVER_PATH, chrome_options=chrome_options)
+    LOGGER.info("Chrome instance initialized for webdriver.")
     # URL on driver
     driver.get(url)
-
+    LOGGER.info("Loaded URL {}.".format(url))
     return driver
 
 def getCompanies(marketSegment):
@@ -55,6 +56,7 @@ def getCompanies(marketSegment):
     equityOption = driver.find_element_by_id('dllFilter2')
     selectEquity = Select(equityOption)
     selectEquity.select_by_value(marketSegment)
+    LOGGER.info("Filtration done for given segment.")
     # Induce lag because of hardware limitations :(
     time.sleep(10)
     # Table element containing list of all companies 
@@ -68,7 +70,7 @@ def getCompanies(marketSegment):
         companyAttributes = row.find_element_by_tag_name('td')
         companyName = companyAttributes.find_element_by_tag_name('a')
         companyNames.append(companyName.text)
-
+    LOGGER.info("Company names extracted.")
     return companyNames
 
 def getValues(qResultElement, rowString):
@@ -94,7 +96,7 @@ def getValues(qResultElement, rowString):
     tempVal = tempVal.replace(',', '')
     tempVal = tempVal.replace('%', '')
     stringValue += tempVal + ']'
-
+    LOGGER.info("Company information extracted.")
     return stringValue
 
 def companyParser(company, sector):
