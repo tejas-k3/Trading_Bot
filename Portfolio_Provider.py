@@ -25,7 +25,7 @@ SCREENER_URL = "https://www.screener.in/company/"
 def openWeb(url):
     """
     This function returns chrome driver opened with given url.
-    @param url
+    @param : MANDATORY url
         URL to operate on
     @return driver
         Chrome driver
@@ -45,39 +45,45 @@ def openWeb(url):
 def getCompanies(marketSegment):
     """
     This function returns list of companies for given market segment.
-    @param marketSegment
+    @param : MANDATORY marketSegment
         BSE Market Segment.
     @return companyNames
         List of names.
     """
-    # Open webdriver of BSE
-    driver = openWeb(BSE_URL)
-    # Find element which is dropdown menu for segment
-    equityOption = driver.find_element_by_id('dllFilter2')
-    selectEquity = Select(equityOption)
-    selectEquity.select_by_value(marketSegment)
-    LOGGER.info("Filtration done for given segment.")
-    # Induce lag because of hardware limitations :(
-    time.sleep(10)
-    # Table element containing list of all companies 
-    listTable = driver.find_element_by_id('idTbody')
-    # Row element containing information for one company
-    listRows = listTable.find_elements_by_tag_name('tr')
-    # List of companies under given segment
     companyNames = []
-    for row in listRows:
-        # Tag element containing name
-        companyAttributes = row.find_element_by_tag_name('td')
-        companyName = companyAttributes.find_element_by_tag_name('a')
-        companyNames.append(companyName.text)
-    LOGGER.info("Company names extracted.")
-    return companyNames
+    try :
+        # Open webdriver of BSE
+        driver = openWeb(BSE_URL)
+        # Find element which is dropdown menu for segment
+        equityOption = driver.find_element_by_id('dllFilter2')
+        selectEquity = Select(equityOption)
+        selectEquity.select_by_value(marketSegment)
+        LOGGER.info("Filtration done for given segment.")
+        # Induce lag because of hardware limitations :(
+        time.sleep(10)
+        # Table element containing list of all companies 
+        listTable = driver.find_element_by_id('idTbody')
+        # Row element containing information for one company
+        listRows = listTable.find_elements_by_tag_name('tr')
+        # List of companies under given segment
+        for row in listRows:
+            # Tag element containing name
+            companyAttributes = row.find_element_by_tag_name('td')
+            companyName = companyAttributes.find_element_by_tag_name('a')
+            companyNames.append((companyName.text, marketSegment))
+        LOGGER.info("Company names extracted.")
+        return companyNames
+    except Exception as exc:
+        print("Error in getCompanies {}".format(marketSegment))
+        return companyNames
 
 def getValues(qResultElement, rowString):
     """
     This function returns string of given row.
     @param qResultElement
         Web Element containing table of attribute value.
+    @param : MANDATORY rowString
+        Web Element row name containing information.
     @return stringValue
         String format of list holding values of given row.
     """
@@ -102,48 +108,52 @@ def getValues(qResultElement, rowString):
 def companyParser(company, sector):
     """
     This function returns formatted object of given company.
-    @param company
+    @param : MANDATORY company
         Company name.
-    @param sector
+    @param : MANDATORY sector
         Sector of company.
     @return companyInfo
         JSON object of company.
     """
-    # List of required information
-    companyInfo = [company]
-    # This is a workaround for hidden element on search section ->
-    driver = openWeb(SCREENER_URL+company+'/consolidated/')
-    # Induce lag because of hardware limitations :(
-    time.sleep(10)
-    # Card element containing company's attributes
-    companyCard = driver.find_element_by_id('top-ratios')
-    # Extracting values
-    companyAttributes = companyCard.find_elements_by_xpath('.//span[contains(@class, "number")]')
-    # Formatting
-    for attribute in itertools.islice(companyAttributes, 4):
-        companyInfo.append(attribute.text.replace(',', ''))
-    companyInfo.append(companyAttributes[-2].text.replace(',', ''))
-    companyInfo.append(companyAttributes[-4].text.replace(',', ''))
-    companyInfo.append(sector)
-    companyLinks = driver.find_element_by_class_name('company-links')
-    companyInfo.append(re.sub(r'^.*?:', '', companyLinks.find_elements_by_tag_name('a')[2].text))
+    try :
+        # List of required information
+        companyInfo = [company]
+        # This is a workaround for hidden element on search section ->
+        driver = openWeb(SCREENER_URL+company+'/consolidated/')
+        # Induce lag because of hardware limitations :(
+        time.sleep(7)
+        # Card element containing company's attributes
+        companyCard = driver.find_element_by_id('top-ratios')
+        # Extracting values
+        companyAttributes = companyCard.find_elements_by_xpath('.//span[contains(@class, "number")]')
+        # Formatting
+        for attribute in itertools.islice(companyAttributes, 4):
+            companyInfo.append(attribute.text.replace(',', ''))
+        companyInfo.append(companyAttributes[-2].text.replace(',', ''))
+        companyInfo.append(companyAttributes[-4].text.replace(',', ''))
+        companyInfo.append(sector)
+        companyLinks = driver.find_element_by_class_name('company-links')
+        companyInfo.append(re.sub(r'^.*?:', '', companyLinks.find_elements_by_tag_name('a')[2].text))
 
-    stringOPMRatio = getValues(driver.find_element_by_id('quarters'), "OPM")    
-    stringNetProfit = getValues(driver.find_element_by_id('quarters'), "Net Profit")
-    stringEPS = getValues(driver.find_element_by_id('quarters'), "EPS")
+        stringOPMRatio = getValues(driver.find_element_by_id('quarters'), "OPM")    
+        stringNetProfit = getValues(driver.find_element_by_id('quarters'), "Net Profit")
+        stringEPS = getValues(driver.find_element_by_id('quarters'), "EPS")
 
-    quarterlyResults = [stringOPMRatio, stringNetProfit, stringEPS]
-    companyInfo.append(quarterlyResults)
+        quarterlyResults = [stringOPMRatio, stringNetProfit, stringEPS]
+        companyInfo.append(quarterlyResults)
 
-    stringReserve = getValues(driver.find_element_by_id('balance-sheet'), "Reserves")
-    stringFixedAssets = getValues(driver.find_element_by_id('balance-sheet'), "Fixed Assets")
-    balanceSheet = [stringReserve, stringFixedAssets]
-    companyInfo.append(balanceSheet)
+        stringReserve = getValues(driver.find_element_by_id('balance-sheet'), "Reserves")
+        stringFixedAssets = getValues(driver.find_element_by_id('balance-sheet'), "Fixed Assets")
+        balanceSheet = [stringReserve, stringFixedAssets]
+        companyInfo.append(balanceSheet)
 
-    stringNetCashFlow = getValues(driver.find_element_by_id('cash-flow'), "Net Cash Flow")
-    stringNetCashFlow = stringNetCashFlow.replace('Net Cash Flow : [', '')
-    stringNetCashFlow = stringNetCashFlow.replace(']', '')
-    stringNetCashFlow = stringNetCashFlow.replace(',', '')
-    netCashFlow = list(stringNetCashFlow.split(" "))
-    companyInfo.append(netCashFlow)
-    return JSON_Dealer.convertcompanyToJSON(companyInfo)
+        stringNetCashFlow = getValues(driver.find_element_by_id('cash-flow'), "Net Cash Flow")
+        stringNetCashFlow = stringNetCashFlow.replace('Net Cash Flow : [', '')
+        stringNetCashFlow = stringNetCashFlow.replace(']', '')
+        stringNetCashFlow = stringNetCashFlow.replace(',', '')
+        netCashFlow = list(stringNetCashFlow.split(" "))
+        companyInfo.append(netCashFlow)
+        return JSON_Dealer.convertcompanyToJSON(companyInfo)
+    except Exception as exc:
+        print("Error in companyParser for {}".format(company))
+        return None

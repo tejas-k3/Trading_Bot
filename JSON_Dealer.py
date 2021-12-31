@@ -2,12 +2,13 @@
 This file is used for all JSON related functionality for entire project.
 """
 import json
+import os
 import logging as LOGGER
 
 def convertToDictionary(stringValue):
     """
     This function will return dictionary of strings.
-    @param stringValue
+    @param : MANDATORY stringValue
         List of string values which needs conversion (Quarterly Results, Balance Sheets).
     @return dictionary
         Dictionary of the same.
@@ -24,41 +25,67 @@ def convertToDictionary(stringValue):
         }
     """
     LOGGER.info("Converted string values to dictionary.")
-    info = dict([report.split(': ') for report in stringValue])
+    info = {}
+    for record in stringValue:
+        pairValue = list(record.split(' : '))
+        pairValue[1] = pairValue[1].replace('[', '')
+        pairValue[1] = pairValue[1].replace(']', '')
+        pairValue[1] = list(map(float, list(pairValue[1].split(', '))))
+        info[pairValue[0]] = pairValue[1]
     return info
 
 def convertcompanyToJSON(company):
     """
     This function will converts company information strings to JSON object.
-    @param company
+    @param : MANDATORY company
         List of strings having companies metadata
     @return companyMetaData
         JSON object of company's metadata
     """
-    companyMetaData =  {
-        "Name":company[0],
-        "Market Cap":float(company[1]),
-        "Current Price":float(company[2]),
-        "Current High":float(company[3]),
-        "Current Low":float(company[4]),
-        "ROE":float(company[5]),
-        "Divident Yield":float(company[6]),
-        "Sector": company[7],
-        "Stock Name": company[8],
-        "Quarterly Results": convertToDictionary(company[9]),
-        "Balance Sheet": convertToDictionary(company[10]),
-        "Cash Flows": company[11]
-        }
-    LOGGER.info("Converted {} to schema format.".format(company[0]))
-    return json.dumps(companyMetaData)
+    if company==None:
+        print("JSON Dealer returns None")
+        return None
+    try :
+        companyMetaData =  {
+            "Name":company[0],
+            "Market Cap":float(company[1]),
+            "Current Price":float(company[2]),
+            "Current High":float(company[3]),
+            "Current Low":float(company[4]),
+            "ROE":float(company[5]),
+            "Divident Yield":float(company[6]),
+            "Sector": company[7],
+            "Stock Name": company[8],
+            "Quarterly Results": convertToDictionary(company[9]),
+            "Balance Sheet": convertToDictionary(company[10]),
+            "Cash Flows": company[11]
+            }
+        LOGGER.info("Converted {} to schema format.".format(company[0]))
+        return companyMetaData
+    except Exception:
+        print("Error in company Meta schema conversion for {name} with error:\n{err} and {exargs}".format(name = company[0], err=Exception, exargs=Exception.args))
+        return None
 
-def convertcompanyToDictionaryList(companyList):
+def jsonFileStore(companyList, path=None, name=None):
     """
     This function will converts list of JSON objects to list of dictionary items.
-    @param companiesList
+    @param : MANDATORY companiesList
         List of JSON objects holding companies information
-    @return companies
-        List of dictionary values holding companies information
+    @param : OPTIONAL path
+        Path where file will be saved.
+    @param : OPTIONAL name
+        Name of file to be stored.
     """
     LOGGER.info("Converting JSON company list to python dictionary.")
-    return json.load(companyList)
+    if path is None:
+        path = os.getcwd()
+    if name is None:
+        name = "/values.json"
+    try :
+        with open( path+name, "w+") as jsonFile:
+            jsonFile.write("[")
+            jsonFile.write(json.dumps(companyList))
+            jsonFile.write("]")
+    except Exception:
+        os.remove(path+name)
+        print("Error in file creation with {err}".format(Exception))

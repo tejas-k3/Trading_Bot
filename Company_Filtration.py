@@ -18,19 +18,20 @@ dividendYield_FairlyConfidenceValue = 1.0
 def profitableCompanies(companies):
     """
     This function will filter companies.
-    @param companies
+    @param : MANDATORY companies
         List of JSON companies
-    @return potentialCompanies
+    @return : MANDATORY potentialCompanies
         List of JSON potential companies
     """
-    potentialCompanies = list()
+    potentialCompanies = []
     for company in companies:
         if isProfitable(company):
             potentialCompanies.append(company)
     return potentialCompanies
 
 def isProfitable(company):
-    if confidentROE(company["ROE"])*confidentOPM(company["Quarterly Results"["OPM"]])*confidentDividendYield(company["Divident Yield"]):
+        
+    if confidentROE(company['ROE'])*confidentOPM(company["Quarterly Results"]['OPM'])*confidentDividendYield(company['Divident Yield']):
         return True
     return False
 
@@ -45,12 +46,20 @@ def confidentROE(ROE):
 
 def confidentOPM(OPMList):
     growthValue = 0
-    growthRate=[(x-y)*100/y for x, y in it.izip(OPMList[1:], OPMList)]
-    for value in growthRate:
-        growthValue+=value
-    if growthValue>OPMLimit and OPMList[0]<=OPMLimit[-1]:
-        return OPM_HighlyConfidenceValue
-    return -1
+    try:
+        growthRate=[((x-y)*100)/y for x, y in zip(OPMList[1:], OPMList)]
+        for value in growthRate:
+            growthValue+=value
+        if growthValue < OPMLimit and OPMList[0] <= OPMLimit:
+            # print(growthValue, "OPM Growth value")
+            return OPM_HighlyConfidenceValue
+        return -1
+    except Exception as exc:
+            print("OK")
+            return -1
+    # print("Growth Rate : ", growthRate)
+    # print("GVALUE: ", growthValue, " OPM ", OPMList[0], OPMList[-1])
+    # if growthValue > OPMLimit and OPMList[0] <= OPMLimit:
 
 def confidentDividendYield(dividendYield):
     if dividendYield>=dividendYieldLowerLimit and dividendYield<=dividendYieldUpperLimit:
