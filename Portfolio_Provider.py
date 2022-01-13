@@ -155,5 +155,19 @@ def companyParser(company, sector):
         companyInfo.append(netCashFlow)
         return JSON_Dealer.convertcompanyToJSON(companyInfo)
     except Exception as exc:
-        print("Error in companyParser for {}".format(company))
+        print("Error in companyParser for {company} with Error :{err}".format(company=company, err=str(exc)))
         return None
+
+def parsingMethod(company):
+    """
+    This function returns formatted object of given company.
+    @param : MANDATORY company
+        Company tuple with name and sector values.
+    @return companyInfo
+        JSON object of company.
+    """
+    try:
+        companyInfo = companyParser(company[0], company[1])
+        return companyInfo
+    except Exception as exc:
+        print("Error inside Parsing method\n{}".format(str(exc)))

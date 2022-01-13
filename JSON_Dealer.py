@@ -45,6 +45,12 @@ def convertcompanyToJSON(company):
     if company==None:
         print("JSON Dealer returns None")
         return None
+    # Covering the case where ROE is not available.
+    if company[5]=='':
+        company[5]='0'
+    # Covering the case where Divident is not available.
+    if company[6]=='':
+        company[6]='0'
     try :
         companyMetaData =  {
             "Name":company[0],
@@ -62,11 +68,11 @@ def convertcompanyToJSON(company):
             }
         LOGGER.info("Converted {} to schema format.".format(company[0]))
         return companyMetaData
-    except Exception:
-        print("Error in company Meta schema conversion for {name} with error:\n{err} and {exargs}".format(name = company[0], err=Exception, exargs=Exception.args))
+    except Exception as exc:
+        print("Error in company Meta schema conversion for {name} with error:\n{err}".format(name = company[0], err=str(exc)))
         return None
 
-def jsonFileStore(companyList, path=None, name=None):
+def jsonFileStore(companyList, path=None, name=None, enList=True):
     """
     This function will converts list of JSON objects to list of dictionary items.
     @param : MANDATORY companiesList
@@ -83,9 +89,11 @@ def jsonFileStore(companyList, path=None, name=None):
         name = "/values.json"
     try :
         with open( path+name, "w+") as jsonFile:
-            jsonFile.write("[")
+            if(enList):
+                jsonFile.write("[")
             jsonFile.write(json.dumps(companyList))
-            jsonFile.write("]")
+            if(enList):
+                jsonFile.write("]")
     except Exception:
         os.remove(path+name)
-        print("Error in file creation with {err}".format(Exception))
+        print("Error in file creation with {err}".format(str(Exception)))
