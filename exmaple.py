@@ -1,39 +1,36 @@
 from ast import Constant
-# from xml.etree.ElementTree import tostring
 import Portfolio_Provider
 import Company_Filtration
-
 from time import perf_counter
 import pywhatkit
 import CONSTANT
 import INFO
+import logging
+import logging.config
+logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
+LOGGER = logging.getLogger('root')
+
 # segmentList = INFO.marketSegments
 
 segmentList = []
 segmentList.append('S&P BSE Consumer Discretionary Goods & Services')
-# segmentList.append('S&P BSE Telecom')
+segmentList.append('S&P BSE Telecom')
 # segmentList.append('S&P BSE India Manufacturing Index')
 # segmentList.append('S&P BSE Fast Moving Consumer Goods')
 # segmentList.append('S&P BSE BANKEX')
 # segmentList.append('S&P BSE 250 LargeMidCap Index')
 
-# for _ in logging.root.manager.loggerDict:
-    # logging.getLogger(_).disabled = True 
-
-#LOGGER = #LOGGER
-# #LOGGER.basicConfig(level=#LOGGER.warning)
-
 companies = []
-#LOGGER.warning("Received BSE segment to work with.")
 
 def parsingMethod(companiesList):
 
     try:
         val = Portfolio_Provider.companyParser(companiesList[0], companiesList[1])
         # Appending companies wasnt working here because of localized code.
+        LOGGER.info("Parsed companies.")
         return val
     except Exception:
-        print("Error inside Parsing method")
+        LOGGER.error("Error inside Parsing method")
     
 import multiprocessing
 ######################## 1112.3271719 optimised and current time 364.4034104
@@ -46,12 +43,13 @@ if __name__ == '__main__':
     for result  in results:
         tempval+=result
     setOfCompanies.update(val for val in tempval if val[0] not in [i[0] for i in setOfCompanies])
+    LOGGER.info("Scrapped company names.")
     # print(len(setOfCompanies), "After duplication removal", setOfCompanies)
     results = pool.map(parsingMethod, setOfCompanies)
     for result in results:
         companies.append(result)
     companies = list(filter(None, companies))
-    # companies = [('TINPLATE', 'S&P BSE Industrials')]
+    LOGGER.info("Scrapped companies information and saved it in a list.")
     profitable = []
     profitable = Company_Filtration.profitableCompanies(companies)
     # JSON_Dealer.jsonFileStore(companyList=profitable, name="/profitableCompanies.json")
@@ -74,9 +72,9 @@ if __name__ == '__main__':
 
 
 
-#LOGGER.info("Scrapped company names.")
+
 # companies.append(Portfolio_Provider.companyParser('MARUTI', 'S&P BSE AUTO'))
-#LOGGER.info("Scrapped companies information and saved it in a list.")
+
 
 
 
@@ -90,4 +88,4 @@ if __name__ == '__main__':
 # for kompany in profitable:
 #     print(type(kompany))
 #     print(kompany)
-#LOGGER.info("Saved the companies information in companie.json file under working directory.")
+# LOGGER.info("Saved the companies information in companie.json file under working directory.")

@@ -6,11 +6,7 @@ Current Limit is 10 ie gather relevant information of 10 stocks.
 import JSON_Dealer
 import logging
 import logging.config
-logging.config.dictConfig({
-    'version': 1,
-    'disable_existing_loggers': True,
-})
-# logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
+logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
 LOGGER = logging.getLogger('StockProvider')
 
 

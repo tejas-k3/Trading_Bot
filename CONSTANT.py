@@ -1,3 +1,9 @@
+# Project CONSTANTS
+versionName = "Dev_M_A_V1.0.0.1"
+
+#Hardware limitation :(
+processLimit = 3 
+
 # Configurable variables for tuning the logic to have better confidence
 ROELowerLimit=15
 ROEUpperLimit=20

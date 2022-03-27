@@ -12,6 +12,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 # To suppress LOGS from imported modules
 import logging
+import logging.config
 for _ in logging.root.manager.loggerDict:
     logging.getLogger(_).setLevel(level=logging.CRITICAL)
     logging.getLogger(_).disabled = True
@@ -26,10 +27,8 @@ import CONSTANT
 
 
 
-# logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
-# LOGGER = logging.getLogger('PortfolioProvider')
-
-# logging.disable(logging.INFO)
+logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
+LOGGER = logging.getLogger('PortfolioProvider')
 
 # Path to chrome binary
 CHROME_PATH = r'C:/Program Files/Google/Chrome/Application/chrome.exe'
@@ -57,8 +56,7 @@ def openWeb(url):
     chrome_options.add_argument("--window-size=%s" % "1920,1080")
     chrome_options.binary_location = CHROME_PATH
     driver = webdriver.Chrome(executable_path=DRIVER_PATH, chrome_options=chrome_options)
-    print("Yep working")
-    # LOGGER.info("Chrome instance initialized for webdriver.")
+    LOGGER.info("Chrome instance initialized for webdriver.")
     # URL on driver
     driver.get(url)
     # LOGGER.info("Loaded URL {}.".format(url))
@@ -80,7 +78,7 @@ def getCompanies(marketSegment):
         equityOption = driver.find_element_by_id('dllFilter2')
         selectEquity = Select(equityOption)
         selectEquity.select_by_value(marketSegment)
-        # LOGGER.info("Filtration done for given segment.")
+        LOGGER.info("Filtration done for {} segment.".format(marketSegment))
         # Induce lag because of hardware limitations :(
         time.sleep(10)
         # Table element containing list of all companies 
@@ -93,10 +91,10 @@ def getCompanies(marketSegment):
             companyAttributes = row.find_element_by_tag_name('td')
             companyName = companyAttributes.find_element_by_tag_name('a')
             companyNames.append((companyName.text, marketSegment))
-        # LOGGER.info("Company names extracted.")
+        LOGGER.info("Company names extracted for {}.".format(marketSegment))
         return companyNames
     except Exception as exc:
-        print("Error in getCompanies {}".format(marketSegment))
+        print("Error in getCompanies for {} with error {}".format(marketSegment, str(exc)))
         return companyNames
 
 def getValues(qResultElement, rowString):
@@ -124,7 +122,7 @@ def getValues(qResultElement, rowString):
     tempVal = tempVal.replace(',', '')
     tempVal = tempVal.replace('%', '')
     stringValue += tempVal + ']'
-    # LOGGER.info("Company information extracted.")
+    # LOGGER.info("Values extraction done.")
     return stringValue
 
 def companyParser(company, sector):
@@ -140,6 +138,7 @@ def companyParser(company, sector):
     try :
         # List of required information
         companyInfo = [company]
+        LOGGER.info("Information extraction started for {}".format(company))
         # This is a workaround for hidden element on search section ->
         driver = openWeb(SCREENER_URL+company+'/consolidated/')
         # Induce lag because of hardware limitations :(
@@ -175,11 +174,11 @@ def companyParser(company, sector):
         stringNetCashFlow = stringNetCashFlow.replace(',', '')
         netCashFlow = list(stringNetCashFlow.split(" "))
         companyInfo.append(netCashFlow)
+        LOGGER.info("Information extraction success for {}".format(company))
         return JSON_Dealer.convertcompanyToJSON(companyInfo)
     except Exception as exc:
-        print("Error in companyParser for {company} with Error :{err}".format(company=company, err=str(exc)))
+        LOGGER.error("Error in companyParser for {company} with Error :{err}".format(company=company, err=str(str(exc))))
         CONSTANT.globalFailed.append(company)
-        print("GLOB VALUE", CONSTANT.globalFailed)
         return None
 
 def parsingMethod(company):
@@ -194,7 +193,6 @@ def parsingMethod(company):
         companyInfo = companyParser(company[0], company[1])
         return companyInfo
     except Exception as exc:
-        print("Error inside Parsing method\n{}".format(str(exc)))
+        LOGGER.error("Error inside Parsing method\n with message {}".format(str(str(exc))))
         CONSTANT.globalFailed.append(company[0])
-        print("GLOB VALUE", CONSTANT.globalFailed)
         return None
