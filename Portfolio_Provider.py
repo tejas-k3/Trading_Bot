@@ -10,9 +10,27 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 # Options TO HIDE
 from selenium.webdriver.chrome.options import Options
-import logging as LOGGER
+# To suppress LOGS from imported modules
+import logging
+for _ in logging.root.manager.loggerDict:
+    logging.getLogger(_).setLevel(level=logging.CRITICAL)
+    logging.getLogger(_).disabled = True
+# To suppress warnings from imported modules
+import warnings
+warnings.filterwarnings('ignore')
+warnings.warn('DelftStack')
+warnings.warn('Do not show this message')
 
 import JSON_Dealer
+import CONSTANT
+
+
+
+# logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
+# LOGGER = logging.getLogger('PortfolioProvider')
+
+# logging.disable(logging.INFO)
+
 # Path to chrome binary
 CHROME_PATH = r'C:/Program Files/Google/Chrome/Application/chrome.exe'
 # Path to chrome driver
@@ -33,13 +51,17 @@ def openWeb(url):
     # Option to explicitly hide chrome in background.
     chrome_options = Options()
     chrome_options.add_argument("--headless")
+    # Fix for chromium debugger printing annoying debugs
+    chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    chrome_options.add_argument('--log-level=5') # Added with log level critical
     chrome_options.add_argument("--window-size=%s" % "1920,1080")
     chrome_options.binary_location = CHROME_PATH
     driver = webdriver.Chrome(executable_path=DRIVER_PATH, chrome_options=chrome_options)
-    LOGGER.info("Chrome instance initialized for webdriver.")
+    print("Yep working")
+    # LOGGER.info("Chrome instance initialized for webdriver.")
     # URL on driver
     driver.get(url)
-    LOGGER.info("Loaded URL {}.".format(url))
+    # LOGGER.info("Loaded URL {}.".format(url))
     return driver
 
 def getCompanies(marketSegment):
@@ -58,7 +80,7 @@ def getCompanies(marketSegment):
         equityOption = driver.find_element_by_id('dllFilter2')
         selectEquity = Select(equityOption)
         selectEquity.select_by_value(marketSegment)
-        LOGGER.info("Filtration done for given segment.")
+        # LOGGER.info("Filtration done for given segment.")
         # Induce lag because of hardware limitations :(
         time.sleep(10)
         # Table element containing list of all companies 
@@ -71,7 +93,7 @@ def getCompanies(marketSegment):
             companyAttributes = row.find_element_by_tag_name('td')
             companyName = companyAttributes.find_element_by_tag_name('a')
             companyNames.append((companyName.text, marketSegment))
-        LOGGER.info("Company names extracted.")
+        # LOGGER.info("Company names extracted.")
         return companyNames
     except Exception as exc:
         print("Error in getCompanies {}".format(marketSegment))
@@ -102,7 +124,7 @@ def getValues(qResultElement, rowString):
     tempVal = tempVal.replace(',', '')
     tempVal = tempVal.replace('%', '')
     stringValue += tempVal + ']'
-    LOGGER.info("Company information extracted.")
+    # LOGGER.info("Company information extracted.")
     return stringValue
 
 def companyParser(company, sector):
@@ -156,6 +178,8 @@ def companyParser(company, sector):
         return JSON_Dealer.convertcompanyToJSON(companyInfo)
     except Exception as exc:
         print("Error in companyParser for {company} with Error :{err}".format(company=company, err=str(exc)))
+        CONSTANT.globalFailed.append(company)
+        print("GLOB VALUE", CONSTANT.globalFailed)
         return None
 
 def parsingMethod(company):
@@ -171,3 +195,6 @@ def parsingMethod(company):
         return companyInfo
     except Exception as exc:
         print("Error inside Parsing method\n{}".format(str(exc)))
+        CONSTANT.globalFailed.append(company[0])
+        print("GLOB VALUE", CONSTANT.globalFailed)
+        return None

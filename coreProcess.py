@@ -8,7 +8,11 @@ import INFO
 from time import perf_counter
 import multiprocessing
 import pywhatkit
-
+import logging.config
+logging.config.dictConfig({
+    'version': 1,
+    'disable_existing_loggers': True,
+})
 #Version name
 versionName = "Dev_M_A_V1.0.0.1"
 

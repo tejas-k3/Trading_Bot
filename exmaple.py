@@ -1,25 +1,36 @@
+from ast import Constant
+# from xml.etree.ElementTree import tostring
 import Portfolio_Provider
 import Company_Filtration
-import logging as LOGGER
+
 from time import perf_counter
 import pywhatkit
+import CONSTANT
+import INFO
+# segmentList = INFO.marketSegments
+
 segmentList = []
-
 segmentList.append('S&P BSE Consumer Discretionary Goods & Services')
-segmentList.append('S&P BSE Telecom')
-segmentList.append('S&P BSE India Manufacturing Index')
-segmentList.append('S&P BSE Fast Moving Consumer Goods')
+# segmentList.append('S&P BSE Telecom')
+# segmentList.append('S&P BSE India Manufacturing Index')
+# segmentList.append('S&P BSE Fast Moving Consumer Goods')
+# segmentList.append('S&P BSE BANKEX')
+# segmentList.append('S&P BSE 250 LargeMidCap Index')
 
+# for _ in logging.root.manager.loggerDict:
+    # logging.getLogger(_).disabled = True 
 
+#LOGGER = #LOGGER
+# #LOGGER.basicConfig(level=#LOGGER.warning)
 
 companies = []
-LOGGER.info("Received BSE segment to work with.")
+#LOGGER.warning("Received BSE segment to work with.")
 
 def parsingMethod(companiesList):
 
     try:
         val = Portfolio_Provider.companyParser(companiesList[0], companiesList[1])
-        # Appending companies wasnt working here
+        # Appending companies wasnt working here because of localized code.
         return val
     except Exception:
         print("Error inside Parsing method")
@@ -40,16 +51,21 @@ if __name__ == '__main__':
     for result in results:
         companies.append(result)
     companies = list(filter(None, companies))
+    # companies = [('TINPLATE', 'S&P BSE Industrials')]
     profitable = []
     profitable = Company_Filtration.profitableCompanies(companies)
     # JSON_Dealer.jsonFileStore(companyList=profitable, name="/profitableCompanies.json")
     t1_end = perf_counter()
-    print("Total time taken : ", t1_end-t1_start)
-    messageForWhatsapp = "Potential buy stock names\n"
-    for kompany in profitable:
-        messageForWhatsapp += (kompany['Name'])
-        messageForWhatsapp  += ('\n')
-    pywhatkit.sendwhatmsg_instantly("+919644049059", messageForWhatsapp, 10, True, 20)
+    print("Total time taken in mins : ", (t1_end-t1_start)/60)
+    print("Failed for following :")
+    
+    # print(CONSTANT.globalFailed)
+    # messageForWhatsapp = "Potential buy stock names\n"
+    # for kompany in profitable:
+    #     messageForWhatsapp += (kompany['Name'] + " at price  " + str(kompany['Current Price']))
+    #     messageForWhatsapp  += ('\n')
+    # print(messageForWhatsapp)
+    # pywhatkit.sendwhatmsg_instantly("+919644049059", messageForWhatsapp, 10, True, 20)
 
 
 
@@ -58,9 +74,9 @@ if __name__ == '__main__':
 
 
 
-LOGGER.info("Scrapped company names.")
+#LOGGER.info("Scrapped company names.")
 # companies.append(Portfolio_Provider.companyParser('MARUTI', 'S&P BSE AUTO'))
-LOGGER.info("Scrapped companies information and saved it in a list.")
+#LOGGER.info("Scrapped companies information and saved it in a list.")
 
 
 
@@ -74,4 +90,4 @@ LOGGER.info("Scrapped companies information and saved it in a list.")
 # for kompany in profitable:
 #     print(type(kompany))
 #     print(kompany)
-LOGGER.info("Saved the companies information in companie.json file under working directory.")
+#LOGGER.info("Saved the companies information in companie.json file under working directory.")

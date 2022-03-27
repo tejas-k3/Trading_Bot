@@ -13,3 +13,5 @@ ROCELowerLimit = 0
 ROCEUpperLimit = 50
 ROCE_HighlyConfidenceValue = 1.5
 ROCE_FairlyConfidenceValue = 0.75
+
+globalFailed=[]

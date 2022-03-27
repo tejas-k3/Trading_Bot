@@ -5,6 +5,8 @@ This file holds logic for filtration of companies based on metric evaluation.
 import itertools as it
 from CONSTANT import *
 
+#Shortfall  (Coverage)
+
 # Need to create for list of companies having 0 OPM
 
 def profitableCompanies(companies):
@@ -66,7 +68,7 @@ def confidentDividendYield(dividendYield):
     return 0
 
 def shareholdingPattern(holdingValues):
-    # Stable holding of promoters, FII (Financial Institutional Investors), DII (Domestic Institutional Investors)
+    # Stable holding of promoters 40, FII (Financial Institutional Investors) 30-35, DII (Domestic Institutional Investors) 15
     return True
 
 def confidentROCE(ROCE):
@@ -104,4 +106,8 @@ def confidentCurrentRatio(currentRatio):
 
 def confidentATR(ATR):
     # Asset turn over Ratio, compare with peers, more better.
+    return True
+
+def confidentMarketValue(marketValue):
+    # MarketCap/Book Value (Ratio per year comparison)
     return True
