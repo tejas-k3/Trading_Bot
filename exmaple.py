@@ -69,23 +69,3 @@ if __name__ == '__main__':
 
 #################
 
-
-
-
-
-# companies.append(Portfolio_Provider.companyParser('MARUTI', 'S&P BSE AUTO'))
-
-
-
-
-# print("Total companies to process ", len(companies))
-# print("Total worthy companies ", len(profitable))
-
-# with open(os.getcwd() + "/profitableCompanies.json", "w+") as companiesFile:
-#     companiesFile.write("[")
-#     companiesFile.write(str(profitable))
-#     companiesFile.write("]")
-# for kompany in profitable:
-#     print(type(kompany))
-#     print(kompany)
-# LOGGER.info("Saved the companies information in companie.json file under working directory.")

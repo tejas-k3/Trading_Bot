@@ -63,9 +63,9 @@ if __name__ == '__main__':
         messageForWhatsapp += (kompany['Name'])
         messageForWhatsapp += ", "
     messageForWhatsapp += "done!\nThis was done by {}".format(CONSTANT.versionName)
-    # pywhatkit.sendwhatmsg_instantly("+919644049059", messageForWhatsapp, 30, True, 30)
+    # pywhatkit.sendwhatmsg_instantly("MobileNumber", messageForWhatsapp, 30, True, 30)
     statusReport = "{names} names, {pro} processed companies, {selected} selected companies".format(names=totalNames, pro=totalCompaniesToProcess, selected=totalProfitCompanies)
-    # pywhatkit.sendwhatmsg_instantly("+919644049059", statusReport, 30, True, 30)
+    # pywhatkit.sendwhatmsg_instantly("MobileNumber", statusReport, 30, True, 30)
     LOGGER.info("Iteration completed by version {} with process limit {} under .".format(CONSTANT.versionName, CONSTANT.processLimit))
     #L1 Filtration
     # filteredCompanies = Company_Filtration.profitableCompanies(JSON_Dealer.convertToJSONList(Portfolio_Provider.metadataCompanies()))
