@@ -35,6 +35,7 @@ def convertToDictionary(stringValue):
         pairValue = list(record.split(' : '))
         pairValue[1] = pairValue[1].replace('[', '')
         pairValue[1] = pairValue[1].replace(']', '')
+        # Below line throws error for record 'OPM : [OPM ]' AND 'EPS : [, , , , , -11.36, 0.75, 3.64]'
         pairValue[1] = list(map(float, list(pairValue[1].split(', '))))
         info[pairValue[0]] = pairValue[1]
     return info
@@ -54,7 +55,7 @@ def convertcompanyToJSON(company):
     # Covering the case where value is not available.
     for val in range(0, 12):
         if company[val]=='':
-            LOGGER.info("For {name}, index {i} was having val {x}!".format(name=company[0], i=val, x=company[val]))
+            LOGGER.info("For {name}, index {i} was having null value, set to default value 0".format(name=company[0], i=val))
             company[val]='0'
 
     try :

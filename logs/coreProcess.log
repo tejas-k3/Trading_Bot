@@ -1,0 +1,54 @@
+2022-06-21 15:13:58,019 - PortfolioProvider - INFO - Information 2022-06-21 15:15:18,505 - root - INFO - Scrapped companies information and saved it in a list.
+2022-06-21 15:15:18,506 - CompanyFilteration - INFO - Processed profitable company.
+formation extraction success for IDEA
+2022-06-21 15:14:10,165 - JSONDealer - INFO - For IDEA, index 5 was having nu2022-02022-06-21 15:14:12,591 - root - INFO - Parsed companies.
+2022-06-21 15:14:12,593 - PortfolioProvider - INFO - Information extraction started for A2022-06-21 2022-06-21 15:14:13,661 - PortfolioProvider - INFO - Chrome instance initialized for w2022-06-21 202022-06-21 15:14:24,155 - PortfolioProvider - INFO - Information extraction success for NAUKRI
+2022-06-21 15:14:24,156 - JSONDealer - INFO - Converted NAUKRI to schema format.
+2022-06-21 15:14:26,229 - root - INFO - Parsed companies.
+2022-06-21 15:14:26,230 - PortfolioProvider - INFO - Information extraction started for TRENT
+2022-06-21 2022-06-21 15:14:28,141 - PortfolioProvider - INFO - Chrome instance initialized for w2022-06-21 2022-06-21 15:14:35,668 - PortfolioProvider - ERROR - Error in companyParser for BHARTIARTL with2022-06-21 15:14:36,147 - PortfolioProvider - INFO - Information extraction success for HFCL
+2022-06-21 15:14:36,147 - JSONDealer - INFO - Converted HFCL to schema format.
+2022-06-21 15:14:38,197 - root - INFO - Parsed companies.
+2022-06-21 15:14:38,197 - PortfolioProvider - INFO - Information extraction started for DIXON
+2022-06-21 15:14:39,210 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-06-21 15:14:49,446 - PortfolioProvider - INFO - Information extraction success for DIXON
+2022-06-21 15:14:49,446 - JSONDealer - INFO - Converted DIXON to schema format.
+2022-06-21 15:14:51,511 - root - INFO - Parsed companies.
+2022-06-21 15:14:51,511 - PortfolioProvider - INFO - Information extraction started for DMART
+2022-06-21 15:14:53,359 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-06-21 15:15:03,236 - PortfolioProvider - INFO - Information extraction success for DMART
+2022-06-21 15:15:03,237 - JSONDealer - INFO - Converted DMART to schema format.
+2022-06-21 15:15:05,271 - root - INFO - Parsed companies.
+2022-06-21 15:15:05,271 - PortfolioProvider - INFO - Information extraction started for RAILTEL
+2022-06-21 15:15:07,434 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-06-21 15:15:14,824 - PortfolioProvider - ERROR - Error in co2022-06-21 15:15:15,378 - PortfolioProvider - INFO - Information extraction success for GTPL
+2022-06-21 15:15:15,379 - JSONDealer - INFO - Converted GTPL to schema format.
+2022-06-21 15:15:17,444 - root - INFO - Parsed companies.
+x00E9B8F3+2406643]
+	Ordinal0 [0x00E2AF31+1945393]
+	Ordinal0 [0x00D1C748+837448]
+	Ordinal0 [0x00D492E0+1020640]
+	Ordinal0 [0x00D4957B+1021307]
+	Ordinal0 [0x00D76372+1205106]
+	Ordinal0 [0x00D642C4+1131204]
+	Ordinal0 [0x00D74682+1197698]
+	Ordinal0 [0x00D64096+1130646]
+	Ordinal0 [0x00D3E636+976438]
+	Ordinal0 [0x00D3F546+980294]
+	GetHandleVerifier [0x01109612+2498066]
+	GetHandleVerifier [0x010FC920+2445600]
+	GetHandleVerifier [0x00F34F2A+579370]
+	GetHandleVerifier [0x00F33D36+574774]
+	Ordina2022-06-21 15:15:15,129 -2022-06-21 15:15:16,446 - PortfolioProvider - INFO - Information extraction success for TEJASNET
+2022-06-21 15:15:16,447 - JSONDealer - INFO - Converted TEJASNET to schema format.
+2022-06-21 15:15:18,504 - root - INFO - Parsed companies.
+s2022-06-21 15:15:16,871 - root - INFO - Parsed companies.
+ - INFO - Converted RCOM to schema format.22022-06-21 15:15:17,830 - root - INFO - Parsed companies.
+on started for ASAHIINDIA
+2022-06-21 15:15:05,889 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-06-21 15:15:15,511 - PortfolioProvider - INFO - Information extraction success for ASAHIINDIA
+2022-06-21 15:15:15,512 - JSONDealer - INFO - Converted ASAHIINDIA to schema format.
+2022-06-21 15:15:17,567 - root - INFO - Parsed companies.
+ Information extraction success for BORORENEW
+2022-06-21 15:15:12,405 - JSONDealer - INFO - Converted BORORENEW to schema format.
+2022-06-21 15:15:14,455 - root - INFO - Parsed companies.

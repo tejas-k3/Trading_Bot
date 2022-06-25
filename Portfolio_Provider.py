@@ -3,6 +3,8 @@ This file is used for web scraping companies and their required metadata.
 Populate all required information from Screener.in website.
 Current Limit is as per availability on first page of BSE.
 """
+import JSON_Dealer
+import CONSTANT
 import time
 import re
 import itertools
@@ -22,22 +24,12 @@ warnings.filterwarnings('ignore')
 warnings.warn('DelftStack')
 warnings.warn('Do not show this message')
 
-import JSON_Dealer
-import CONSTANT
-
 
 
 logging.config.fileConfig(fname='ezMoneyLOGGER.conf')
 LOGGER = logging.getLogger('PortfolioProvider')
 
-# Path to chrome binary
-CHROME_PATH = r'C:/Program Files/Google/Chrome/Application/chrome.exe'
-# Path to chrome driver
-DRIVER_PATH = 'C://Users//Tejas//Downloads//selenium//chromedriver.exe'
-# URL to BSE Equity Market
-BSE_URL = "https://www.bseindia.com/eqstreamer/StreamerMarketwatch.html"
-# URL to Screener
-SCREENER_URL = "https://www.screener.in/company/"
+
 
 def openWeb(url):
     """
@@ -54,8 +46,8 @@ def openWeb(url):
     chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
     chrome_options.add_argument('--log-level=5') # Added with log level critical
     chrome_options.add_argument("--window-size=%s" % "1920,1080")
-    chrome_options.binary_location = CHROME_PATH
-    driver = webdriver.Chrome(executable_path=DRIVER_PATH, chrome_options=chrome_options)
+    chrome_options.binary_location = CONSTANT.CHROME_PATH
+    driver = webdriver.Chrome(executable_path=CONSTANT.DRIVER_PATH, chrome_options=chrome_options)
     LOGGER.info("Chrome instance initialized for webdriver.")
     # URL on driver
     driver.get(url)
@@ -73,7 +65,7 @@ def getCompanies(marketSegment):
     companyNames = []
     try :
         # Open webdriver of BSE
-        driver = openWeb(BSE_URL)
+        driver = openWeb(CONSTANT.BSE_URL)
         # Find element which is dropdown menu for segment
         equityOption = driver.find_element_by_id('dllFilter2')
         selectEquity = Select(equityOption)
@@ -140,10 +132,12 @@ def companyParser(company, sector):
         companyInfo = [company]
         LOGGER.info("Information extraction started for {}".format(company))
         # This is a workaround for hidden element on search section ->
-        driver = openWeb(SCREENER_URL+company+'/consolidated/')
+        driver = openWeb(CONSTANT.SCREENER_URL+company+'/consolidated/')
         # Induce lag because of hardware limitations :(
         time.sleep(7)
-        # Card element containing company's attributes
+        # Card element containing company's attributes  -> Fails when value is not present
+
+        
         companyCard = driver.find_element_by_id('top-ratios')
         # Extracting values
         companyAttributes = companyCard.find_elements_by_xpath('.//span[contains(@class, "number")]')
@@ -179,6 +173,7 @@ def companyParser(company, sector):
     except Exception as exc:
         LOGGER.error("Error in companyParser for {company} with Error :{err}".format(company=company, err=str(str(exc))))
         CONSTANT.globalFailed.append(company)
+        LOGGER.debug("Current value of failed list is {}".format(CONSTANT.globalFailed))
         return None
 
 def parsingMethod(company):
@@ -195,4 +190,5 @@ def parsingMethod(company):
     except Exception as exc:
         LOGGER.error("Error inside Parsing method\n with message {}".format(str(str(exc))))
         CONSTANT.globalFailed.append(company[0])
+        LOGGER.debug("Current value of failed list is {}".format(CONSTANT.globalFailed))
         return None

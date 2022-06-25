@@ -38,7 +38,7 @@ if __name__ == '__main__':
     t1_start = perf_counter()
     tempval = []
     setOfCompanies = set()
-    pool = multiprocessing.Pool(processes = 3) # 53 for 3pid, 4 segments
+    pool = multiprocessing.Pool(processes = CONSTANT.processLimit) # 53 for 3pid, 4 segments 3 was for i5 8GEN
     results = pool.map(Portfolio_Provider.getCompanies, segmentList)
     for result  in results:
         tempval+=result
