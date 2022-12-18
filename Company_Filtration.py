@@ -77,8 +77,9 @@ def confidentDividendYield(dividendYield):
 # Needs dev
 def shareholdingPattern(holdingValues):
     # Stable holding of promoters 40, FII (Financial Institutional Investors) 30-35, DII (Domestic Institutional Investors) 15
+    holdingValues['promoters']
     return True
-
+    
 def confidentROCE(ROCE):
     if ROCE>=ROCELowerLimit and ROCE<=ROCEUpperLimit:
         return ROCE_HighlyConfidenceValue

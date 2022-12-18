@@ -1,5 +1,5 @@
 from ast import Constant
-import Portfolio_Provider
+from libs import Portfolio_Provider
 import Company_Filtration
 from time import perf_counter
 import pywhatkit
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     LOGGER.info("Scrapped companies information and saved it in a list.")
     profitable = []
     profitable = Company_Filtration.profitableCompanies(companies)
-    # JSON_Dealer.jsonFileStore(companyList=profitable, name="/profitableCompanies.json")
+    # DataParser.jsonFileStore(companyList=profitable, name="/profitableCompanies.json")
     t1_end = perf_counter()
     print("Total time taken in mins : ", (t1_end-t1_start)/60)
     print("Failed for following :")

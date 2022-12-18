@@ -1,9 +1,8 @@
 """
 This is the core file executing project files.
 """
-import JSON_Dealer
+from libs import DataParser, Portfolio_Provider
 import Company_Filtration
-import Portfolio_Provider
 import INFO
 import CONSTANT
 import time
@@ -45,14 +44,14 @@ if __name__ == '__main__':
     # Clear out invalid formats
     companies = list(filter(None, companies))
     totalCompaniesToProcess = len(companies)
-    JSON_Dealer.jsonFileStore(companyList=companies, name="/logs/"+time.strftime("%Y-%m-%d-%H_%M_%S")+"coreProcess_companies.json", enList = False)
+    DataParser.jsonFileStore(companyList=companies, name="/logs/"+time.strftime("%Y-%m-%d-%H_%M_%S")+"coreProcess_companies.json", enList = False)
     # Total probable profitable companies
     profitableCompanies = []
     profitableCompanies = Company_Filtration.profitableCompanies(companies)
     totalProfitCompanies = len(profitableCompanies)
     for x in profitableCompanies:
         print(x['Name'], end=', ')
-    JSON_Dealer.jsonFileStore(companyList=profitableCompanies, name="/logs/"+time.strftime("%Y-%m-%d-%H_%M_%S")+"coreProcess_profitableCompanies.json", enList = False)
+    DataParser.jsonFileStore(companyList=profitableCompanies, name="/logs/"+time.strftime("%Y-%m-%d-%H_%M_%S")+"coreProcess_profitableCompanies.json", enList = False)
     # End time in seconds
     endTime = perf_counter()
     LOGGER.info("Ended main process at {}".format(endTime))
@@ -68,7 +67,7 @@ if __name__ == '__main__':
     # pywhatkit.sendwhatmsg_instantly("MobileNumber", statusReport, 30, True, 30)
     LOGGER.info("Iteration completed by version {} with process limit {} under .".format(CONSTANT.versionName, CONSTANT.processLimit))
     #L1 Filtration
-    # filteredCompanies = Company_Filtration.profitableCompanies(JSON_Dealer.convertToJSONList(Portfolio_Provider.metadataCompanies()))
+    # filteredCompanies = Company_Filtration.profitableCompanies(DataParser.convertToJSONList(Portfolio_Provider.metadataCompanies()))
     #L2 Current Stock options
     # selectedStocks = Stock_Provider.stocksList(filteredCompanies)
     #L2 Filtration
