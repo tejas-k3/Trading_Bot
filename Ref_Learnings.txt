@@ -1,4 +1,0 @@
-1. How to create requirements file ?
-    pip install pipreqs
-    pipreqs /path/to/project
-Ref - https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt
