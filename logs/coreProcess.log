@@ -1,701 +1,856 @@
-2022-12-08 11:27:22,191 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-2022-12-08 11:41:08,332 - JSONDealer - INFO - Creating JSON File for /logs/2022-12-08-11_41_08coreProcess_companies.json.
-2022-12-08 11:41:08,348 - CompanyFilteration - INFO - Processed profitable company.
-2022-12-08 11:41:08,348 - JSONDealer - INFO - Creating JSON File for /logs/2022-12-08-11_41_08coreProcess_profitableCompanies.json.
-2022-12-08 11:41:08,355 - root - INFO - Ended main process at 1077235.0283112
-2022-12-08 11:41:08,357 - root - INFO - Total time taken for core process to run : 13.859373279998545 minutes
-2022-12-08 11:41:08,357 - root - INFO - 424 names, 246 processed companies, 82 selected companies
-2022-12-08 11:41:08,357 - root - INFO - Iteration completed by version Dev_V1.0.0.1 with process limit 8 under .
-Chrome instance initialized for w2022-12022-2022-12-08 11:28:22,924 - PortfolioProvid2022-12-08 11:28:23,409 - PortfolioProvider - INFO - Company 2022-12-08 11:28:33,030 - PortfolioProvider - INFO - Company names extracted for S2022-12-08 11:28:34,2022-12-08 11:28:36,150 - PortfolioProvider - INFO - Chrome instance initializ2022-12-08 11:28:372022-12-08 11:28:38,557 - Portfo20222022-12-08 11:28:40,982 - PortfolioProvider - INFO - Company 2022-12-08 11:28:49,219 - PortfolioProvider - INFO - Company names extracted for S&P BSE MET2022-2022-12-08 11:28:52,800 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-02022-12-08 11:28:55,467 - Portfoli2022-12-08 2022-12-08 11:28:58,624 - PortfolioProvider 2022-12-08 11:29:06,547 - PortfolioProvider - INFO - Company names extracted for S&P BSE MidCap.
-2022-12-08 11:29:34,648 - PortfolioProvider - INFO - Information extraction started for SJVN
-2022-12-08 11:29:36,399 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:29:46,794 - PortfolioProvider - INFO - Information extraction success for SJVN
-2022-12-08 11:29:46,794 - JSONDe2022-12-08 11:29:46,932 - PortfolioProvider - IN2022-12-08 11:29:48,891 - PortfolioProvider - INFO - Information extraction started for INOXLEISUR
-2022-12-08 11:29:50,405 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:30:00,369 - PortfolioProvider - INFO - Information extraction success for INOXLEISUR
-2022-12-08 11:30:00,373 - JSOND2022-12-08 11:30:00,424 - PortfolioProvider - INFO - In2022-12-08 11:30:02,449 - PortfolioProvider - INFO - Information extraction started for VEDL
-2022-12-08 11:30:03,573 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:30:10,950 - PortfolioProvider - ERROR - Error in companyParser for VEDL with Error :Message: no such element: Unabl2022-12-08 11:30:11,001 - PortfolioProvider - ERROR - Error in companyParser for INOXWIND with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.2022-12-08 11:30:11,619 - PortfolioProvider - ERROR - Error in companyParser for RBLBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","sele2022-12-08 11:30:11,796 - PortfolioProvider - INFO - Information extraction success for HAVELLS
-2022-12-08 11:30:11,796 - JSONDealer - INFO - Converted HAVELLS to schema format.
-2022-12-08 11:30:13,860 - PortfolioProvider - INFO - Information extraction started for MPHASIS
-2022-12-08 11:30:15,385 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:30:22,815 - PortfolioProvider - ERROR - Error in companyParser for MPHASIS with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
-Sta2022-12-08 11:30:24,160 - PortfolioProvider - INFO - Information extraction success for TATAPOWER
-2022-12-08 11:30:24,160 - JSONDealer - INFO - Converted TATAPOWER to schema format.
-2022-12-08 11:30:26,216 - PortfolioProvider - INFO - Information extraction started for EASEMYTRIP
-2022-12-08 11:30:27,908 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:30:35,248 - PortfolioProvider - ERROR - Error in companyParser for EASEMYTRIP with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+2022-12-24 00:29:08,428 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022022-12-24 00:43:24,167 - JSONDealer - INFO - Creating JSON File for /logs/2022-12-24-00_43_24coreProcess_companies.json.
+2022-12-24 00:43:24,179 - CompanyFilteration - INFO - Processed profitable company.
+2022-12-24 00:43:24,181 - JSONDealer - INFO - Creating JSON File for /logs/2022-12-24-00_43_24coreProcess_profitableCompanies.json.
+2022-12-24 00:43:24,190 - root - INFO - Ended main process at 57120.624503
+2022-12-24 00:43:24,191 - root - INFO - Total time taken for core process to run : 14.328786104999987 minutes
+2022-12-24 00:43:24,192 - root - INFO - 433 names, 215 processed companies, 66 selected companies
+2022-12-24 00:43:24,193 - root - INFO - Iteration completed by version Dev_V1.0.0.1 with process limit 8 under .
+22-12-24 00:30:09,2022-12-24 00:30:09,977 - 2022-12-24 00:30:12022-12-24 00:30:15,013 - PortfolioProvider - INFO - Company names extracted for S&P BSE GREENE20222022-12-24 00:30:18,119 - PortfolioProvider - INFO - Chr2022-12-24 00:30:23,879 - Port2022-12-24 00:30:25,484 - Po2022-12-24 00:30:26,467 - PortfolioProvi2022-12-24 00:30:27,602 - Port2022-12-24 002022-12-24 00:30:32,775 - PortfolioProvider - INFO - Company names extracted for S&P BSE LargeCap.
+2022-12-24 00:30:35,919 - PortfolioProvider - INFO - Ch2022-12-24 00:30:41,320 - PortfolioProvi2022-12-24 00:30:43,298 - PortfolioProvider - IN2022-12-22022-12-24 00:30:44,491 - PortfolioProvider - INFO - C2022022-12-24 00:30:51,571 - PortfolioProvider - INFO - Compa2022-12-24 00:30:52,146 - PortfolioProvider - INFO - C2022-12-24 00:30:54,714 - 2022-12-24 00:30:59,281 - PortfolioProvider - INFO - Company n2022-12-24 00:31:01,828 - PortfolioP2022-12-24 00:31:30,441 - PortfolioProvider - INFO - Information extra2022-12-24 00:31:30,441 - 202022-12-24 00:31:31,950 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:31:42,726 - PortfolioProvider - INFO - Information extraction success for RELINFRA
+2022-12-24 00:31:42,727 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:31:42,728 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:31:42,729 - JSONDealer - INFO - Converted RELINFRA to schema format.
+2022-12-24 00:31:44,800 - PortfolioProvider - INFO - Information extraction started for AXISBANK
+2022-12-24 00:31:46,035 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:31:53,922 - PortfolioProvider - ERROR - Error in compa2022-12-24 00:31:55,605 - PortfolioProvider - INFO - Information extraction success for SRF
+2022-12-24 00:31:55,606 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:31:55,606 - JSONDealer - INFO - Converting string val2022-12-24 00:31:56,176 - PortfolioProvider - INFO - Information extraction success for MAHLIFE
+202022-12-24 00:31:57,657 - PortfolioProvider - INFO - Information extraction started for DAPS
+2022-12-24 00:31:58,720 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:32:07,055 - PortfolioProvider - ERROR - Error in companyParser for DAPS with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+St2022-12-24 00:32:07,083 - PortfolioProvider - ERROR - Error in companyParser for BANKINDIA with Error :Message: no such element:2022-12-24 00:32:07,219 - PortfolioProvider - ERROR - Error in companyParser for GLAND with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x002022-12-08 11:30:36,686 - PortfolioProvider - INFO - Information extraction success for HIKAL
-2022-12-08 11:30:36,686 - JSONDealer - INFO - Converted HIKAL to schema format.
-2022-12-08 11:30:38,756 - PortfolioProvider - INFO - Information extraction started for APOLLOTYRE
-2022-12-08 11:30:40,177 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:30:49,990 - PortfolioProvider - INFO - Information extraction success for APOLLOTYRE
-2022-12-08 11:30:49,990 - JSONDealer - INFO - Converted APOLLOTYRE to schema format.
-2022-12-08 11:30:52,047 - PortfolioProvider - INFO - Information extraction started for CUMMINSIND
-2022-12-08 11:30:53,573 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:31:03,212 - PortfolioProvider - INFO - Information extraction success for CUMMINSIND
-2022-12-08 11:31:03,212 - JSONDealer - INFO - Converted CUMMINSIND to schema format.
-2022-12-08 11:31:05,270 - PortfolioProvider - INFO - Information extraction started for BLUESTARCO
-2022-12-08 11:31:06,667 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:31:16,739 - PortfolioProvider - INFO - Information extraction success for BLUESTARCO
-2022-12-08 11:31:16,739 - JSONDealer - INFO - Converted BLUESTARCO to schema format.
-2022-12-08 11:31:18,825 - PortfolioProvider - INFO - Information extraction started for BDL
-2022-12-08 11:31:19,836 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:31:27,193 - PortfolioProvider - ERROR - Error in companyParser for BDL with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x02022-12-24 00:32:07,753 - PortfolioProvider - INFO - Information extraction success for IRCTC
+2022-12-24 00:32:07,754 - JSONDealer - INFO - For IRCTC, index 1 was having null value, set to default value 0
+2022-12-24 00:32:07,755 - JSONDealer - INFO - 2022-12-24 00:32:09,139 - PortfolioProvider - INFO - Information extraction started for DLINKINDIA
+2022-12-24 00:32:10,228 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:32:20,495 - PortfolioProvider - INFO - Information extraction success for DLINKINDIA
+2022-12-24 00:32:20,496 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:32:20,496 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:32:20,496 - JSONDealer - INFO - Converted DLINKINDIA to schema format.
+2022-12-24 00:32:22,561 - PortfolioProvider - INFO - Information extraction started for ELGIEQUIP
+2022-12-24 00:32:23,662 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:32:33,879 - PortfolioProvider - INFO - Information extraction success for ELGIEQUIP
+2022-12-24 00:32:33,881 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:32:33,882 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:32:33,883 - JSONDealer - INFO - Converted ELGIEQUIP to schema format.
+2022-12-24 00:32:35,957 - PortfolioProvider - INFO - Information extraction started for GLOBUSSPR
+2022-12-24 00:32:37,109 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:32:44,867 - PortfolioProvider - ERROR - Error in companyParser for GLOBUSSPR with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
 
-2022-12-08 11:31:29,274 - PortfolioProvider - INFO - Information extract2022-12-08 11:31:29,279 - P2022-12-08 11:31:30,399 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:31:38,909 - PortfolioProvider - INFO - Information extraction success for BAYERCROP
-2022-12-08 11:31:38,909 - JSONDealer - INFO - Converted BAYERCROP to schema format.
-2022-12-08 11:31:40,987 - PortfolioProvider - INFO - Information ex2022-12-08 11:31:42,308 - 2022-12-08 11:31:42,478 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:31:51,927 - PortfolioProvider - INFO - Information extraction success for IGL
-2022-12-08 11:31:51,929 - JSONDealer - INFO - Converted IGL to schema format.
-2022-12-08 11:31:53,991 - PortfolioProvider - INFO - Information extractio2022-12-08 11:31:55,720 - PortfolioProvider - INFO - Information extraction success for NLCINDIA
-2022-12-08 11:31:55,720 -2022-12-08 11:32:04,016 - PortfolioProvider - INFO - Information extraction success for GULFOILLUB
-2022-12-08 11:32:04,020 - JSONDealer - INFO - For GULFOILLUB, index 5 was having null value, set to default value 0
-2022-12-08 11:32:04,020 - JSONDea2022-12-08 11:32:08,761 - PortfolioProvider - INFO - Information extraction success for TAKE
-2022-12-08 11:32:08,761 - JSONDealer - INFO - Converted TAKE to schema format.
-2022-12-08 11:32:10,816 - PortfolioProvider - INFO - Information extracti2022-12-08 11:32:18,420 - PortfolioProvider - INFO - Information extraction success for JPPOWER
-2022-12-08 11:32:18,420 - J2022-12-08 11:32:22,715 - PortfolioProvider - INFO - Information extraction success for GODFRYPHLP
-2022-12-08 11:32:22,719 - JSONDealer - INFO - Converted GODFRYPHLP to schema format.
-2022-12-08 11:32:24,773 - PortfolioProvider - INFO - Information e2022-12-08 11:32:31,968 - PortfolioProvider - INFO - Information extraction success for BRITANNIA
-2022-12-08 11:32:31,972 - JS2022-12-08 11:32:35,384 - PortfolioProvider - INFO - Information extraction success for GESHIP
-2022-12-08 11:32:35,384 - JSONDealer - INFO - Converted GESH2022-12-08 11:32:35,562022-12-08 11:32:37,433 - PortfolioProvider - INFO - Information extraction2022-12-08 11:32:43,586 - PortfolioProvider - ERROR - Error in companyParser for CENTRALBK with Error :Message: no s2022-12-08 11:32:49,717 - PortfolioProvider - INFO - Information extraction success for BHEL
-2022-12-08 11:32:49,887 - JSONDealer - INFO - Converted BHEL to schema format.
-2022-12-08 11:32:51,941 - PortfolioProvider - INFO - Information extraction started for METROBRAND
-2022-12-08 11:32:53,438 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:33:02,655 - PortfolioProvider - INFO - Information extraction success for METROBRAND
-2022-12-08 11:33:02,655 - JSONDealer - INFO - Converted METROBRAND to schema format.
-2022-12-08 11:33:04,708 - PortfolioProvider - INFO - Information extraction started for CIPLA
-2022-12-08 11:33:06,897 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:33:16,691 - PortfolioProvider - INFO - Information extraction success for CIPLA
-2022-12-08 11:33:17,915 - JSONDealer - INFO - Converted CIPLA to schema format.
-2022-12-08 11:33:19,969 - PortfolioProvider - INFO - Information extraction started for COALINDIA
-2022-12-08 11:33:21,074 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:33:30,683 - PortfolioProvider - INFO - Information extraction success for COALINDIA
-2022-12-08 11:33:30,687 - JSONDealer - INFO - Converted COALINDIA to schema format.
-2022-12-08 11:33:32,759 - PortfolioProvider - INFO - Information extraction started for INFY*
-2022-12-08 11:33:33,956 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:33:41,711 - PortfolioProvider - ERROR - Error in companyParser for INFY* with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+2022-12-24 00:32:46,937 - PortfolioProvider - INFO - Information extraction started for SOUTHBANK
+2022-12-24 00:32:47,946 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:32:56,743 - PortfolioProvider - ERROR - Error in companyParser for SOUTHBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:33:43,772 - PortfolioProvider - INFO - Information extraction started for GANESHBE
-2022-12-08 11:33:44,753 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:33:53,832 - PortfolioProvider - INFO - Information extraction success for GANESHBE
-2022-12-08 11:33:53,833 - JSONDealer - INFO - Converted GANESHBE to schema format.
-2022-12-08 11:33:55,907 - PortfolioProvider - INFO - Information extraction started for GPIL
-2022-12-08 11:33:57,942 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:34:07,524 - PortfolioProvider - INFO - Information extraction success for GPIL
-2022-12-08 11:34:08,890 - JSONDealer - INFO - Converted GPIL to schema format.
-2022-12-08 11:34:10,963 - PortfolioProvider - INFO - Information extraction started for AJANTPHARM
-2022-12-08 11:34:12,629 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:34:22,132 - PortfolioProvider - INFO - Information extraction success for AJANTPHARM
-2022-12-08 11:34:22,132 - JSONDealer - INFO - Converted AJANTPHARM to schema format.
-2022-12-08 11:34:24,206 - PortfolioProvider - INFO - Information extraction started for NATURO
-2022-12-08 11:34:25,802 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:34:33,535 - PortfolioProvider - ERROR - Error in companyParser for NATURO with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(N2022-12-24 00:32:56,788 - PortfolioProvider 2022-12-24 00:33:00,526 - PortfolioProvider - INFO - Information extraction success for BHARATFORG
+2022-12-24 00:33:00,527 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:00,527 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:00,528 - JSONDealer - INFO - Converted BHARATFORG to schema format.
+2022-12-24 00:33:02,608 - PortfolioProvider - INFO - Information extraction started for SUPRIYA
+2022-12-24 00:33:03,612 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:33:11,440 - PortfolioProvider - ERROR - Error in companyParser for SUPRIYA with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtr2022-12-24 00:33:13,072 - PortfolioProvider - INFO - Information extraction success for COALINDIA
+2022-12-24 00:33:13,074 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:13,075 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:13,076 - JSONDealer - INFO - Converted COALINDIA to schema format.
+2022-12-24 00:33:15,143 - PortfolioProvider - INFO - Information extraction started for GAIL
+2022-12-24 00:33:16,226 - PortfolioProvider - INFO - Chrome2022-12-24 00:33:21,361 - PortfolioPro2022-12-24 00:33:26,990 - PortfolioProvider - INFO - Information extraction success for GAIL
+2022-12-24 00:33:26,991 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:26,991 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:26,992 - JSONDealer - INFO - Converted GAIL to schema format.
+2022-12-24 00:33:29,057 - PortfolioProvider - INFO - Information extraction started for REETECH
+2022-12-24 00:33:30,114 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:33:38,495 - PortfolioProvider - ERROR - Error in companyParser for REETECH with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:34:35,600 - PortfolioProvider - INFO - Information extraction started for HDFC
-2022-12-08 11:34:36,597 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:34:45,050 - PortfolioProvider - ERROR - Error in companyParser for HDFC with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
-  (Session info: headless chrome=108.0.5359.96)
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B2022-12-24 00:33:38,811 - PortfolioProvider - INFO - Information extraction started for GODREJPROP
+2022-12-24 00:33:40,000 - PortfolioProvider - INF2022-12-24 00:33:40,580 - PortfolioProvider - IN2022-12-24 00:33:50,580 - PortfolioProvider - INFO - Information extraction success for GODREJPROP
+2022-12-24 00:33:50,582 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:50,583 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:33:50,584 - JSONDealer - INFO - Converted GODREJPROP to schema format.
+2022-12-24 00:33:52,643 - PortfolioProvider - INFO - Information extraction started for NBCC
+2022-12-24 00:33:53,791 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:34:03,824 - PortfolioProvider - INFO - Information extraction success for NBCC
+2022-12-24 00:34:03,826 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:03,826 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:03,827 - JSONDealer - INFO - Converted NBCC to schema format.
+2022-12-24 00:34:05,877 - PortfolioProvider - INFO - Information extraction started for TEJASNET
+2022-12-24 00:34:06,962 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:34:17,733 - PortfolioProvider - INFO - Information extraction success for TEJASNET
+2022-12-24 00:34:17,735 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:17,736 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:17,737 - JSONDealer - INFO - Converted TEJASNET to schema format.
+2022-12-24 00:34:19,792 - PortfolioProvider - INFO - Information extraction started for TANLA
+2022-12-24 00:34:20,956 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:34:31,505 - PortfolioProvider - INFO - Information extraction success for TANLA
+2022-12-24 00:34:31,506 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:31,507 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:31,508 - JSONDealer - INFO - Converted TANLA to schema format.
+2022-12-24 00:34:33,570 - PortfolioProvider - INFO - Information extraction started for TORNTPOWER
+2022-12-24 00:34:34,795 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:34:45,799 - PortfolioProvider - INFO - Information extraction success for TORNTPOWER
+2022-12-24 00:34:45,800 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:45,802 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:45,803 - JSONDealer - INFO - Converted TORNTPOWER to schema format.
+2022-12-24 00:34:47,887 - PortfolioProvider - INFO - Information extraction started for TATAELXSI
+2022-12-24 00:34:49,006 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:34:59,787 - PortfolioProvider - INFO - Information extraction success for TATAELXSI
+2022-12-24 00:34:59,789 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:59,790 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:34:59,791 - JSONDealer - INFO - Converted TATAELXSI to schema format.
+2022-12-24 00:35:01,871 - PortfolioProvider - INFO - Information extraction started for BRRL
+2022-12-24 00:35:02,903 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:35:11,265 - PortfolioProvider - ERROR - Error in companyParser for BRRL with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
 
-2022-12-08 11:34:47,122 - PortfolioProvider - INFO - Information extraction started for HINDPETRO
-2022-12-08 11:34:48,613 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:34:58,159 - PortfolioProvider - INFO - Information extraction success for HINDPETRO
-2022-12-08 11:34:58,159 - JSONDealer - INFO - Converted HINDPETRO to schema format.
-2022-12-08 11:35:00,221 - PortfolioProvider - INFO - Information extraction started for BATAINDIA
-2022-12-08 11:35:01,214 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:35:10,714 - PortfolioProvider - INFO - Information extraction success for BATAINDIA
-2022-12-08 11:35:10,718 - JSONDealer - INFO - Converted BATAINDIA to schema format.
-2022-12-08 11:35:12,771 - PortfolioProvider - INFO - Information extraction started for TIMKEN
-2022-12-08 11:35:13,815 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:35:22,086 - PortfolioProvider - INFO - Information extraction success for TIMKEN
-2022-12-08 11:35:22,086 - JSONDealer - INFO - For TIMKEN, index 1 was having null value, set to default value 0
-2022-12-08 11:35:22,086 - JSONDealer - INFO - For TIMKEN, index 2 was having null value, set to default value 0
-2022-12-08 11:35:22,088 - JSONDealer - INFO - For TIMKEN, index 3 was having null value, set to default value 0
-2022-12-08 11:35:22,088 - JSONDealer - INFO - For TIMKEN, index 4 was having null value, set to default value 0
-2022-12-08 11:35:22,090 - JSONDealer - INFO - For TIMKEN, index 5 was having null value, set to default value 0
-2022-12-08 11:35:22,090 - JSONDealer - INFO - For TIMKEN, index 6 was having null value, set to default value 0
-2022-12-08 11:35:22,091 - JSONDealer - ERROR - Error in company Meta schema conversion for TIMKEN with error:
+2022-12-24 00:35:13,347 - PortfolioProvider - INFO - Information extraction started for NATURO
+2022-12-24 00:35:14,437 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:35:22,816 - PortfolioProvider - ERROR - Error in companyParser for NATURO with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:35:24,905 - PortfolioProvider - INFO - Information extraction started for RITES
+2022-12-24 00:35:25,920 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:35:33,717 - PortfolioProvider - ERROR - Error in companyParser for RITES with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:35:35,795 - PortfolioProvider - INFO - Information extraction started for AWL
+2022-12-24 00:35:36,812 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:35:46,491 - PortfolioProvider - INFO - Information extraction success for AWL
+2022-12-24 00:35:46,491 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:35:46,492 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:35:46,493 - JSONDealer - INFO - Converted AWL to schema format.
+2022-12-24 00:35:48,558 - PortfolioProvider - INFO - Information extraction started for MGL
+2022-12-24 00:35:49,587 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:35:57,359 - PortfolioProvider - ERROR - Error in companyParser for MGL with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x02022-12-24 00:35:58,520 - PortfolioProvider - INFO - Information extraction success for HCC
+2022-12-24 00:2022-12-24 00:35:58,586 - PortfolioProvider - INFO - Information extraction success for BATAINDIA
+2022-12-24 00:35:58,587 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:35:58,587 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:35:58,588 - JSONDealer - INFO - Converted BATAINDIA to schema 2022-12-22022-12-24 00:36:00,627 - PortfolioProvider - INFO - Information extraction started for ASI2022-12-22022-12-24 00:36:01,720 - PortfolioProvider - INFO - Chrome instance initialized for web2022-12-24 00:36:12,075 - PortfolioProvider - INFO - Information extraction success for WOCKPHARMA
+2022-12-24 00:36:12,078 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:12,080 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:12,081 - JSONDealer - INFO - Converted WOCKPHARMA to schema format.
+2022-12-24 00:36:14,160 - PortfolioProvider - INFO - Information extraction started for LUPIN
+2022-12-24 00:36:15,251 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:36:26,096 - PortfolioProvider - INFO - Information extraction success for LUPIN
+2022-12-24 00:36:26,098 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:26,098 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:26,099 - JSONDealer - INFO - Converted LUPIN to schema format.
+2022-12-24 00:36:28,234 - PortfolioProvider - INFO - Information extraction started for ESCORTS
+2022-12-24 00:36:29,397 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:36:39,875 - PortfolioProvider - INFO - Information extraction success for ESCORTS
+2022-12-24 00:36:39,876 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:39,877 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:39,878 - JSONDealer - INFO - Converted ESCORTS to schema format.
+2022-12-24 00:36:41,945 - PortfolioProvider - INFO - Information extraction started for SAREGAMA
+2022-12-24 00:36:43,107 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:36:53,885 - PortfolioProvider - INFO - Information extraction success for SAREGAMA
+2022-12-24 00:36:53,887 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:53,888 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:36:53,889 - JSONDealer - INFO - Converted SAREGAMA to schema format.
+2022-12-24 00:36:55,975 - PortfolioProvider - INFO - Information extraction started for ITC
+2022-12-24 00:36:57,149 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:37:07,897 - PortfolioProvider - INFO - Information extraction success for ITC
+2022-12-24 00:37:07,899 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:37:07,900 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:37:07,901 - JSONDealer - INFO - Converted ITC to schema format.
+2022-12-24 00:37:09,966 - PortfolioProvider - INFO - Information extraction started for INA
+2022-12-24 00:37:11,022 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:37:19,410 - PortfolioProvider - ERROR - Error in companyParser for INA with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:37:21,489 - PortfolioProvider - INFO - Information extraction started for VEERKRUPA
+2022-12-24 00:37:22,594 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:37:30,961 - PortfolioProvider - ERROR - Error in companyParser for VEERKRUPA with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:37:33,044 - PortfolioProvider - INFO - Information extraction started for PSB
+2022-12-24 00:37:34,194 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:37:43,076 - PortfolioProvider - ERROR - Error in companyParser for PSB with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00D82CA1]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00D82BFF]
+	(No symbol) [0x00DA8804]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:37:45,153 - PortfolioProvider - INFO - Information extraction started for UCOBANK
+2022-12-24 00:37:46,244 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:37:54,004 - PortfolioProvider - ERROR - Error in companyParser for UCOBANK with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x2022-12-24 00:37:54,845 - PortfolioProvider - INFO - Information extraction success for LICI
+2022-12-24 00:37:54,846 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:37:54,847 - JSONDealer - ERROR - Error in company Meta schema conversion for LICI with error:
+could not convert string to float: ''
+2022-12-24 00:37:56,913 - PortfolioProvider - INFO - Information extraction started for TEXRAIL
+2022-12-24 00:37:58,056 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:38:08,774 - PortfolioProvider - INFO - Information extraction success for TEXRAIL
+2022-12-24 00:38:08,777 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:08,778 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:08,780 - JSONDealer - INFO - Converted TEXRAIL to schema format.
+2022-12-24 00:38:10,855 - PortfolioProvider - INFO - Information extraction started for KRBL
+2022-12-24 00:38:11,959 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:38:22,910 - PortfolioProvider - INFO - Information extraction success for KRBL
+2022-12-24 00:38:22,912 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:22,913 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:22,915 - JSONDealer - INFO - Converted KRBL to schema format.
+2022-12-24 00:38:24,976 - PortfolioProvider - INFO - Information extraction started for M&M
+2022-12-24 00:38:26,036 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:38:36,995 - PortfolioProvider - INFO - Information extraction success for M&M
+2022-12-24 00:38:36,996 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:36,997 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:36,997 - JSONDealer - INFO - Converted M&M to schema format.
+2022-12-24 00:38:39,058 - PortfolioProvider - INFO - Information extraction started for MPHASIS
+2022-12-24 00:38:40,114 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:38:50,629 - PortfolioProvider - INFO - Information extraction success for MPHASIS
+2022-12-24 00:38:50,630 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:50,631 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:38:50,632 - JSONDealer - INFO - Converted MPHASIS to schema format.
+2022-12-24 00:38:52,691 - PortfolioProvider - INFO - Information extraction started for NEULANDLAB
+2022-12-24 00:38:53,700 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:39:04,301 - PortfolioProvider - INFO - Information extraction success for NEULANDLAB
+2022-12-24 00:39:04,303 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:39:04,304 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:39:04,305 - JSONDealer - INFO - Converted NEULANDLAB to schema format.
+2022-12-24 00:39:06,395 - PortfolioProvider - INFO - Information extraction started for PNBHOUSING
+2022-12-24 00:39:07,498 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:39:16,209 - PortfolioProvider - ERROR - Error in companyParser for PNBHOUSING with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00D82CA1]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00D82BFF]
+	(No symbol) [0x00DA8804]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:39:18,282 - PortfolioProvider - INFO - Information extraction started for ICICIBANK
+2022-12-24 00:39:19,368 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:39:28,316 - PortfolioProvider - ERROR - Error in companyParser for ICICIBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00D82CA1]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00D82BFF]
+	(No symbol) [0x00DA8804]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:39:30,407 - PortfolioProvider - INFO - Information extraction started for TCS
+2022-12-24 00:39:31,503 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:39:39,252 - PortfolioProvider - ERROR - Error in companyParser for TCS with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerName2022-12-24 00:39:39,361 - PortfolioProvider - INFO - Information extraction success f2022-12-24 00:39:41,314 - PortfolioProvider - INFO - Information extraction started for SUZLON
+2022-12-24 00:39:42,457 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:39:50,210 - PortfolioProvider - ERROR - Error in companyParser for SUZLON with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+S2022-12-24 00:39:50,333 - PortfolioProvider - ERROR - Error in companyParser for HATSUN with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+612022-12-24 00:39:52,281 - PortfolioProvider - INFO - Information extraction started for FIVESTAR
+2022-12-24 00:39:53,284 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:40:02,516 - PortfolioProvider - INFO - Information extraction success for FIVESTAR
+2022-12-24 00:40:02,517 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:02,518 - JSONDealer - ERROR - Error in company Meta schema 2022-12-24 00:40:03,235 - PortfolioProvider - INFO - Information extraction succ2022-12-24 00:40:04,580 - PortfolioProvider - INFO - Information extraction started for PVR
+2022-12-24 00:40:05,599 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:40:16,001 - PortfolioProvider - INFO - Information extraction success for PVR
+2022-12-24 00:40:16,003 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:16,004 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:16,005 - JSONDealer - INFO - Converted PVR to schema format.
+2022-12-24 00:40:18,066 - PortfolioProvider - INFO - Information extraction started for IOLCP
+2022-12-24 00:40:19,136 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:40:26,901 - PortfolioProvider - ERROR - Error in companyParser for IOLCP with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+ companyParser for J&KBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00D82CA1]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00D82BFF]
+	(No symbol) [0x00DA8804]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:40:28,660 - PortfolioProvider - INFO - Information extraction started for PFIZER
+2022-12-24 00:40:29,664 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:40:38,869 - PortfolioProvider - INFO - Information extraction success for PFIZER
+2022-12-24 00:40:38,870 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:38,871 - JSONDealer - ERROR - Error in company Meta schema conversion for PFIZER with error:
 could not convert string to float: 'OPM '
-2022-12-08 11:35:24,156 - PortfolioProvider - INFO - Information extraction started for MRF
-2022-12-08 11:35:25,720 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:35:37,005 - PortfolioProvider - INFO - Information extraction success for MRF
-2022-12-08 11:35:37,005 - JSONDealer - INFO - Converted MRF to schema format.
-2022-12-08 11:35:39,069 - PortfolioProvider - INFO - Information extraction started for MEDPLUS
-2022-12-08 11:35:40,583 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:35:49,826 - PortfolioProvider - INFO - Information extraction success for MEDPLUS
-2022-12-08 11:35:49,831 - JSONDealer - INFO - Converted MEDPLUS to schema format.
-2022-12-08 11:35:51,897 - PortfolioProvider - INFO - Information extraction started for ELGIEQUIP
-2022-12-08 11:35:53,361 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:36:02,904 - PortfolioProvider - INFO - Information extraction success for ELGIEQUIP
-2022-12-08 11:36:02,904 - JSONDealer - INFO - Converted ELGIEQUIP to schema format.
-2022-12-08 11:36:04,969 - PortfolioProvider - INFO - Information extraction started for VGUARD
-2022-12-08 11:36:06,436 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:36:15,824 - PortfolioProvider - INFO - Information extraction success for VGUARD
-2022-12-08 11:36:16,307 - JSONDealer - INFO - Converted VGUARD to schema format.
-2022-12-08 11:36:18,391 - PortfolioProvider - INFO - Information extraction started for KAYNES
-2022-12-08 11:36:20,013 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:36:28,493 - PortfolioProvider - INFO - Information extraction success for KAYNES
-2022-12-08 11:36:28,493 - JSONDealer - ERROR - Error in company Meta schema conversion for KAYNES with error:
+2022-12-24 00:40:40,938 - PortfolioProvider - INFO - Information extraction started for AIAENG
+2022-12-24 00:40:42,019 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:40:52,722 - PortfolioProvider - INFO - Information extraction success for AIAENG
+2022-12-24 00:40:52,723 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:52,724 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:40:52,725 - JSONDealer - INFO - Converted AIAENG to schema format.
+2022-12-24 00:40:54,804 - PortfolioProvider - INFO - Information extraction started for APOLLOHOSP
+2022-12-24 00:40:55,829 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:41:06,502 - PortfolioProvider - INFO - Information extraction success for APOLLOHOSP
+2022-12-24 00:41:06,503 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:06,504 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:06,504 - JSONDealer - INFO - Converted APOLLOHOSP to schema format.
+2022-12-24 00:41:08,581 - PortfolioProvider - INFO - Information extraction started for SBICARD
+2022-12-24 00:41:09,660 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:41:18,262 - PortfolioProvider - ERROR - Error in companyParser for SBICARD with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00D82CA1]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00D82BFF]
+	(No symbol) [0x00DA8804]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+
+2022-12-24 00:41:20,327 - PortfolioProvider - INFO - Information extraction started for VGUARD
+2022-12-24 00:41:21,454 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:41:31,829 - PortfolioProvider - INFO - Information extraction success for VGUARD
+2022-12-24 00:41:31,830 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:31,830 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:31,830 - JSONDealer - INFO - Converted VGUARD to schema format.
+2022-12-24 00:41:33,915 - PortfolioProvider - INFO - Information extraction started for PATANJALI
+2022-12-24 00:41:35,070 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:41:45,722 - PortfolioProvider - INFO - Information extraction success for PATANJALI
+2022-12-24 00:41:45,723 - JSONDealer - INFO - For PATANJALI, index 5 was having null value, set to default value 0
+2022-12-24 00:41:45,724 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:45,724 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:45,725 - JSONDealer - INFO - Converted PATANJALI to schema format.
+2022-12-24 00:41:47,796 - PortfolioProvider - INFO - Information extraction started for EASEMYTRIP
+2022-12-24 00:41:48,956 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:41:58,782 - PortfolioProvider - INFO - Information extraction success for EASEMYTRIP
+2022-12-24 00:41:58,783 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:58,783 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:41:58,784 - JSONDealer - INFO - Converted EASEMYTRIP to schema format.
+2022-12-24 00:42:00,873 - PortfolioProvider - INFO - Information extraction started for GOODLUCK
+2022-12-24 00:42:01,953 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:12,472 - PortfolioProvider - INFO - Information extraction success for GOODLUCK
+2022-12-24 00:42:12,474 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:12,475 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:12,476 - JSONDealer - INFO - Converted GOODLUCK to schema format.
+2022-12-24 00:42:14,536 - PortfolioProvider - INFO - Information extraction started for MSUMI
+2022-12-24 00:42:15,641 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:24,831 - PortfolioProvider - INFO - Information extraction success for MSUMI
+2022-12-24 00:42:24,832 - JSONDealer - INFO - For MSUMI, index 1 was having null value, set to default value 0
+2022-12-24 00:42:24,833 - JSONDealer - INFO - For MSUMI, index 2 was having null value, set to default value 0
+2022-12-24 00:42:24,834 - JSONDealer - INFO - For MSUMI, index 3 was having null value, set to default value 0
+2022-12-24 00:42:24,836 - JSONDealer - INFO - For MSUMI, index 4 was having null value, set to default value 0
+2022-12-24 00:42:24,837 - JSONDealer - INFO - For MSUMI, index 5 was having null value, set to default value 0
+2022-12-24 00:42:24,838 - JSONDealer - INFO - For MSUMI, index 6 was having null value, set to default value 0
+2022-12-24 00:42:24,839 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:24,840 - JSONDealer - ERROR - Error in company Meta schema conversion for MSUMI with error:
 could not convert string to float: 'OPM '
-2022-12-08 11:36:30,548 - PortfolioProvider - INFO - Information extraction started for MGL
-2022-12-08 11:36:32,086 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:36:40,591 - PortfolioProvider - INFO - Information extraction success for MGL
-2022-12-08 11:36:40,591 - JSONDealer - INFO - For MGL, index 1 was having null value, set to default value 0
-2022-12-08 11:36:40,591 - JSONDealer - INFO - For MGL, index 2 was having null value, set to default value 0
-2022-12-08 11:36:40,591 - JSONDealer - INFO - For MGL, index 3 was having null value, set to default value 0
-2022-12-08 11:36:40,591 - JSONDealer - INFO - For MGL, index 4 was having null value, set to default value 0
-2022-12-08 11:36:40,591 - JSONDealer - INFO - For MGL, index 5 was having null value, set to default value 0
-2022-12-08 11:36:40,595 - JSONDealer - INFO - For MGL, index 6 was having null value, set to default value 0
-2022-12-08 11:36:40,595 - JSONDealer - ERROR - Error in company Meta schema conversion for MGL with error:
-could not convert string to float: 'OPM '
-2022-12-08 11:36:42,640 - PortfolioProvider - INFO - Information extraction started for UPL
-2022-12-08 11:36:43,634 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:36:53,062 - PortfolioProvider - INFO - Information extraction success for UPL
-2022-12-08 11:36:53,062 - JSONDealer - INFO - Converted UPL to schema format.
-2022-12-08 11:36:55,137 - PortfolioProvider - INFO - Information extraction started for SIEMENS
-2022-12-08 11:36:56,624 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:06,306 - PortfolioProvider - INFO - Information extraction success for SIEMENS
-2022-12-08 11:37:06,306 - JSONDealer - INFO - Converted SIEMENS to schema format.
-2022-12-08 11:37:08,377 - PortfolioProvider - INFO - Information extraction started for RCF
-2022-12-08 11:37:09,864 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:19,523 - PortfolioProvider - INFO - Information extraction success for RCF
-2022-12-08 11:37:19,527 - JSONDealer - INFO - Converted RCF to schema format.
-2022-12-08 11:37:21,603 - PortfolioProvider - INFO - Information extraction started for CHOLAFIN
-2022-12-08 11:37:22,723 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:30,123 - PortfolioProvider - ERROR - Error in companyParser for CHOLAFIN with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+2022-12-24 00:42:26,910 - PortfolioProvider - INFO - Information extraction started for PRAJIND
+2022-12-24 00:42:28,056 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:39,105 - PortfolioProvider - INFO - Information extraction success for PRAJIND
+2022-12-24 00:42:39,106 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:39,107 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:39,108 - JSONDealer - INFO - Converted PRAJIND to schema format.
+2022-12-24 00:42:41,171 - PortfolioProvider - INFO - Information extraction started for BPCL
+2022-12-24 00:42:42,334 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:53,483 - PortfolioProvider - INFO - Information extraction success for BPCL
+2022-12-24 00:42:53,484 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:53,486 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:53,487 - JSONDealer - INFO - Converted BPCL to schema format.
+2022-12-24 00:42:55,566 - PortfolioProvider - INFO - Information extraction started for SYRMA
+2022-12-24 00:42:56,719 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:43:06,849 - PortfolioProvider - INFO - Information extraction success for SYRMA
+2022-12-24 00:43:06,850 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:06,851 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:06,852 - JSONDealer - INFO - Converted SYRMA to schema format.
+2022-12-24 00:43:08,923 - PortfolioProvider - INFO - Information extraction started for VOLTAS
+2022-12-24 00:43:10,214 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:43:22,093 - PortfolioProvider - INFO - Information extraction success for VOLTAS
+2022-12-24 00:43:22,095 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:22,096 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:22,096 - JSONDealer - INFO - Converted VOLTAS to schema format.
+er - ERROR - Error in companyParser for WIPRO with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
 
-2022-12-08 11:37:32,173 - PortfolioProvider - INFO - Information extraction started for SUNTV
-2022-12-08 11:37:33,690 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:43,074 - PortfolioProvider - INFO - Information extraction success for SUNTV
-2022-12-08 11:37:43,074 - JSONDealer - INFO - Converted SUNTV to schema format.
-2022-12-08 11:37:45,162 - PortfolioProvider - INFO - Information extraction started for METROPOLIS
-2022-12-08 11:37:46,234 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:53,629 - PortfolioProvider - ERROR - Error in companyParser for METROPOLIS with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+2022-12-24 00:42:08,412 - PortfolioProvider - INFO - Information extraction started for EKC
+2022-12-24 00:42:09,500 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:20,140 - PortfolioProvider - INFO - Information extraction success for EKC
+2022-12-24 00:42:20,142 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:20,144 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:20,144 - JSONDealer - INFO - Converted EKC to schema format.
+2022-12-24 00:42:22,208 - PortfolioProvider - INFO - Information extraction started for APOLLOTYRE
+2022-12-24 00:42:23,285 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:31,063 - PortfolioProvider - ERROR - Error in companyParser for APOLLOTYRE with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:37:55,688 - PortfolioProvider - INFO - Information extraction started for SUZLON
-2022-12-08 11:37:57,331 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:04,685 - PortfolioProvider - ERROR - Error in companyParser for SUZLON with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x2022-12-24 00:42:31,284 - PortfolioProvider - ERROR - Error in companyParser for EPBIO with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:38:06,750 - PortfolioProvider - INFO - Information extraction started for COCHINSHIP
-2022-12-08 11:38:08,236 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:17,347 - PortfolioProvider - INFO - Information extraction success for COCHINSHIP
-2022-12-08 11:38:17,347 - JSONDealer - INFO - Converted COCHINSHIP to schema format.
-2022-12-08 11:38:19,422 - PortfolioProvider - INFO - Information extraction started for NYKAA
-2022-12-08 11:38:20,435 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:29,367 - PortfolioProvider - INFO - Information extraction success for NYKAA
-2022-12-08 11:38:29,367 - JSONDealer - INFO - Converted NYKAA to schema format.
-Information extraction started for ADANITRANS
-2022-12-08 11:36:59,312 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:08,538 - PortfolioProvider - INFO - Information extraction success for ADANITRANS
-2022-12-08 11:37:08,538 - JSONDealer - INFO - Converted ADANITRANS to schema format.
-2022-12-08 11:37:10,598 - PortfolioProvider - INFO - Information extraction started for STML
-2022-12-08 11:37:11,600 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:18,990 - PortfolioProvider - ERROR - Error in companyParser for STML with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No sym2022-12-24 00:42:33,149 - PortfolioProvider - INFO - Information extraction started for LATENTVIEW
+2022-12-24 00:42:34,286 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:42,047 - PortfolioProvider - ERROR - Error in companyParser for LATENTVIEW with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headl2022-12-24 00:42:42,332 - PortfolioProvider - ERROR - Error in companyPar2022-12-24 00:42:44,203 - PortfolioProvider - INFO - Information extraction success for JPPOWER
+2022-12-24 00:42:44,204 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:44,206 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:44,207 - JSONDealer - INFO - Converted JPPOWER to schema format.
+2022-12-24 00:42:46,269 - PortfolioProvider - INFO - Information extraction started for HARSHA
+2022-12-24 00:42:47,291 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:42:56,818 - PortfolioProvider - INFO - Information extraction success for HARSHA
+2022-12-24 00:42:56,819 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:56,820 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:42:56,820 - JSONDealer - INFO - Converted HARSHA to schema format.
+2022-12-24 00:42:58,889 - PortfolioProvider - INFO - Information extraction started for HEALTHYLIFE
+2022-12-24 00:42:59,968 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:43:08,330 - PortfolioProvider - ERROR - Error in companyParser for HEALTHYLIFE with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	2022-12-08 11:37:19,229 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:28,194 - PortfolioProvider - INFO - Information extraction success for RAINBOW
-2022-12-08 11:37:28,194 - JSONDealer - INFO - Converted RAINBOW to schema format.
-2022-12-08 11:37:30,258 - PortfolioProvider - INFO - Information extraction started for NFL
-2022-12-08 11:37:31,255 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:40,678 - PortfolioProvider - INFO - Information extraction success for NFL
-2022-12-08 11:37:40,678 - JSONDealer - INFO - Converted NFL to schema format.
-2022-12-08 11:37:42,759 - PortfolioProvider - INFO - Information extraction started for AMBER
-2022-12-08 11:37:44,287 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:37:53,741 - PortfolioProvider - INFO - Information extraction success for AMBER
-2022-12-08 11:37:53,745 - JSONDealer - INFO - Converted AMBER to schema format.
-2022-12-08 11:37:55,797 - PortfolioProvider - INFO - Information extraction started for CONCOR
-2022-12-08 11:37:57,251 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:06,564 - PortfolioProvider - INFO - Information extraction success for CONCOR
-2022-12-08 11:38:06,564 - JSONDealer - INFO - Converted CONCOR to schema format.
-2022-12-08 11:38:08,624 - PortfolioProvider - INFO - Information extraction started for DEEPIND
-2022-12-08 11:38:09,656 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:17,403 - PortfolioProvider - ERROR - Error in companyParser for DEEPIND with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:38:19,486 - PortfolioProvider - INFO - Information extraction started for RATEGAIN
-2022-12-08 11:38:20,531 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:29,437 - PortfolioProvider - INFO - Information extraction success for RATEGAIN
-2022-12-08 11:38:29,442 - JSONDealer - INFO - Converted RATEGAIN to schema format.
-2022-12-08 11:38:31,505 - PortfolioProvider - INFO - Information extraction started for BHARTIARTL
-2022-12-08 11:38:33,068 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:42,747 - PortfolioProvider - INFO - Information extraction success for BHARTIARTL
-2022-12-08 11:38:42,747 - JSONDealer - INFO - Converted BHARTIARTL to schema format.
-2022-12-08 11:38:44,798 - PortfolioProvider - INFO - Information extraction started for UNOMINDA
-2022-12-08 11:38:46,128 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:55,786 - PortfolioProvider - INFO - Information extraction success for UNOMINDA
-2022-12-08 11:38:55,790 - JSONDealer - INFO - Converted UNOMINDA to schema format.
-2022-12-08 11:38:57,850 - PortfolioProvider - INFO - Information extraction started for TANLA
-2022-12-08 11:38:58,910 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:08,345 - PortfolioProvider - INFO - Information extraction success for TANLA
-2022-12-08 11:39:08,345 - JSONDealer - INFO - Converted TANLA to schema format.
-ue 0
-2022-12-08 11:38:46,308 - JSONDealer - INFO - For SUPRIYA, index 3 was having null value, set to default value 0
-2022-12-08 11:38:46,308 - JSONDealer - INFO - For SUPRIYA, index 4 was having null value, set to default value 0
-2022-12-08 11:38:46,308 - JSONDealer - INFO - For SUPRIYA, index 5 was having null value, set to default value 0
-2022-12-08 11:38:46,308 - JSONDealer - INFO - For SUPRIYA, index 6 was having null value, set to default value 0
-2022-12-08 11:38:46,312 - JSONDealer - ERROR - Error in company Meta schema conversion for SUPRIYA with error:
-could not convert string to float: 'OPM '
-2022-12-08 11:38:48,380 - PortfolioProvider - INFO - Information extraction started for NCC
-2022-12-08 11:38:49,869 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:38:59,435 - PortfolioProvider - INFO - Information extraction success for NCC
-2022-12-08 11:38:59,436 - JSONDealer - INFO - Converted NCC to schema format.
-2022-12-08 11:39:01,498 - PortfolioProvider - INFO - Information extraction started for REETECH
-2022-12-08 11:39:02,568 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:09,965 - PortfolioProvider - ERROR - Error in companyParser for REETECH with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:39:12,040 - PortfolioProvider - INFO - Information extraction started for FEDERALBNK
-2022-12-08 11:39:13,504 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:21,612 - PortfolioProvider - ERROR - Error in companyParser for FEDERALBNK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:39:23,704 - PortfolioProvider - INFO - Information extraction started for IRCTC
-2022-12-08 11:39:25,272 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:33,561 - PortfolioProvider - INFO - Information extraction success for IRCTC
-2022-12-08 11:39:33,561 - JSONDealer - INFO - For IRCTC, index 1 was having null value, set to default value 0
-2022-12-08 11:39:33,561 - JSONDealer - INFO - For IRCTC, index 2 was having null value, set to default value 0
-2022-12-08 11:39:33,561 - JSONDealer - INFO - For IRCTC, index 3 was having null value, set to default value 0
-2022-12-08 11:39:33,565 - JSONDealer - INFO - For IRCTC, index 4 was having null value, set to default value 0
-2022-12-08 11:39:33,565 - JSONDealer - INFO - For IRCTC, index 5 was having null value, set to default value 0
-2022-12-08 11:39:33,565 - JSONDealer - INFO - For IRCTC, index 6 was having null value, set to default value 0
-2022-12-08 11:39:33,565 - JSONDealer - ERROR - Error in company Meta schema conversion for IRCTC with error:
-could not convert string to float: 'OPM '
-2022-12-08 11:39:35,633 - PortfolioProvider - INFO - Information extraction started for IOB
-2022-12-08 11:39:36,981 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:45,431 - PortfolioProvider - ERROR - Error in companyParser for IOB with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:39:47,508 - PortfolioProvider - INFO - Information extraction started for SRF
-2022-12-08 11:39:48,975 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:39:58,577 - PortfolioProvider - INFO - Information extraction success for SRF
-2022-12-08 11:39:58,577 - JSONDealer - INFO - Converted SRF to schema format.
-2022-12-08 11:40:00,631 - PortfolioProvider - INFO - Information extraction started for TORNTPOWER
-2022-12-08 11:40:01,735 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:40:11,270 - PortfolioProvider - INFO - Information extraction success for TORNTPOWER
-2022-12-08 11:40:11,272 - JSONDealer - INFO - Converted TORNTPOWER to schema format.
-2022-12-08 11:40:13,320 - PortfolioProvider - INFO - Information extraction started for MCX
-2022-12-08 11:40:14,844 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:40:24,521 - PortfolioProvider - INFO - Information extraction success for MCX
-2022-12-08 11:40:24,522 - JSONDealer - INFO - Converted MCX to schema format.
-2022-12-08 11:40:26,579 - PortfolioProvider - INFO - Information extraction started for YESBANK
-2022-12-08 11:40:28,193 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:40:36,555 - PortfolioProvider - ERROR - Error in companyParser for YESBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-2022-12-08 11:40:38,623 - PortfolioProvider - INFO - Information extraction started for UGARSUGAR
-2022-12-08 11:40:39,953 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:40:49,263 - PortfolioProvider - INFO - Information extraction success for UGARSUGAR
-2022-12-08 11:40:49,263 - JSONDealer - INFO - Converted UGARSUGAR to schema format.
-2022-12-08 11:40:51,315 - PortfolioProvider - INFO - Information extraction started for J&KBANK
-2022-12-08 11:40:52,859 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:41:01,250 - PortfolioProvider - ERROR - Error in companyParser for J&KBANK with Error :Message: no such element: Unable to locate element: {"method":"xpath","selector":"//tr[.//*[contains(text(),"OPM")]]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
-
-er - INFO - Information extraction success for BAJAJ-AUTO
-2022-12-08 11:40:49,674 - JSONDealer - INFO - Converted BAJAJ-AUTO to schema format.
-2022-12-08 11:40:51,738 - PortfolioProvider - INFO - Information extraction started for GLAXO
-2022-12-08 11:40:52,860 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:41:02,382 - PortfolioProvider - INFO - Information extraction success for GLAXO
-2022-12-08 11:41:02,384 - JSONDealer - INFO - Converted GLAXO to schema format.
-der - INFO - Information extraction success for POLYCAB
-2022-12-08 11:40:49,540 - JSONDealer - INFO - Converted POLYCAB to schema format.
-2022-12-08 11:40:51,588 - PortfolioProvider - INFO - Information extraction started for CRESSAN
-2022-12-08 11:40:52,859 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:41:00,676 - PortfolioProvider - ERROR - Error in companyParser for CRESSAN with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
-  (Session info: headless chrome=108.0.5359.96)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00B0F243]
-	(No symbol) [0x00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009EE612]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]
-	GetHandleVerifier [0x00BB8C0A+619850]
-	GetHandleVerifier [0x00BB7830+614768]
-	(No symbol) [0x00AA05FC]
-	(No symbol) [0x00AA5968]
-	(No symbol) [0x00AA5A55]
-	(No symbol) [0x00AB051B]
-	BaseThreadInitThunk [0x751FFEF9+25]
-2022-12-08 11:41:02,508 - PortfolioProvider - INFO - Information extraction success for TCS
-2022-12-08 11:41:02,508 - JSONDealer - INFO - Converted TCS to schema format.
-00A97FD1]
-	(No symbol) [0x0098D04D]
-	(No symbol) [0x009BC0B0]
-	(No symbol) [0x009BC22B]
-	(No symbol) [0x009B2CA1]
-	(No symbol) [0x009D85D4]
-	(No symbol) [0x009B2BFF]
-	(No symbol) [0x009D8804]
-	(No symbol) [0x009EC9EB]
-	(No symbol) [0x009D8386]
-	(No symbol) [0x009B163C]
-	(No symbol) [0x009B269D]
-	GetHandleVerifier [0x00DA9A22+2655074]
-	GetHandleVerifier [0x00D9CA24+2601828]2022-12-08 11:40:54,659 - PortfolioProvider - INFO - Information extraction success for COROMANDEL
-2022-12-08 11:40:54,663 - JSONDealer - INFO - Converted COROMANDEL to schema format.
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x02022-12-24 00:43:09,179 - PortfolioProvider - INFO - Information extraction success for MOTHERSON
+2022-12-24 00:43:09,182 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:09,183 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:09,184 - JSONDealer - INFO - Converted MOTHERSON to schema format.
 ]
-	BaseThreadInitThunk [0x751FFEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x76EF7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x76EF7B8E+238]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
 
-2022-12-08 11:40:55,330 - PortfolioProvider - INFO - Information extraction started for PATELENG
-2022-12-08 11:40:56,795 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
-2022-12-08 11:41:06,248 - PortfolioProvider - INFO - Information extraction success for PATELENG
-2022-12-08 11:41:06,248 - JSONDealer - INFO - Converted PATELENG to schema format.
+ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [2022-12-24 00:43:07,130 - PortfolioProvider - INFO - Information extraction success for ICICIGI
+2022-12-24 00:43:07,132 - JSONDealer - INFO - For ICICIGI, index 1 was having null value, set to default value 0
+2022-12-24 00:43:07,133 - JSONDealer - INFO - For ICICIGI, index 2 was having null value, set to default value 0
+2022-12-24 00:43:07,134 - JSONDealer - INFO - For ICICIGI, index 3 was having null value, set to default value 0
+2022-12-24 00:43:07,135 - JSONDealer - INFO - For ICICIGI, index 4 was having null value, set to default value 0
+2022-12-24 00:43:07,136 - JSONDealer - INFO - For ICICIGI, index 5 was having null value, set to default value 0
+2022-12-24 00:43:07,136 - JSONDealer - INFO - For ICICIGI, index 6 was having null value, set to default value 0
+2022-12-24 00:43:07,137 - JSONDealer - INFO - Converting string values to dictionary.
+2022-12-24 00:43:07,137 - JSONDealer - ERROR - Error in company Meta schema conversion for ICICIGI with error:
+could not convert string to float: 'OPM '
+h error:
+could not convert string to float: 'OPM '
+2022-12-24 00:42:56,726 - PortfolioProvider - INFO - Information extraction started for LLOYDSTEEL
+2022-12-24 00:42:57,890 - PortfolioProvider - INFO - Chrome instance initialized for webdriver.
+2022-12-24 00:43:06,280 - PortfolioProvider - ERROR - Error in companyParser for LLOYDSTEEL with Error :Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="top-ratios"]"}
+  (Session info: headless chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00EDF243]
+	(No symbol) [0x00E67FD1]
+	(No symbol) [0x00D5D04D]
+	(No symbol) [0x00D8C0B0]
+	(No symbol) [0x00D8C22B]
+	(No symbol) [0x00DBE612]
+	(No symbol) [0x00DA85D4]
+	(No symbol) [0x00DBC9EB]
+	(No symbol) [0x00DA8386]
+	(No symbol) [0x00D8163C]
+	(No symbol) [0x00D8269D]
+	GetHandleVerifier [0x01179A22+2655074]
+	GetHandleVerifier [0x0116CA24+2601828]
+	GetHandleVerifier [0x00F88C0A+619850]
+	GetHandleVerifier [0x00F87830+614768]
+	(No symbol) [0x00E705FC]
+	(No symbol) [0x00E75968]
+	(No symbol) [0x00E75A55]
+	(No symbol) [0x00E8051B]
+	BaseThreadInitThunk [0x766000F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775E7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775E7B8E+238]
+

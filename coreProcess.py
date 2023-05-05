@@ -1,7 +1,11 @@
 """
 This is the core file executing project files.
 """
-from libs import DataParser, Portfolio_Provider
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
+# from libs
+import DataParser, Portfolio_Provider
 import Company_Filtration
 import INFO
 import CONSTANT
