@@ -4,7 +4,7 @@ versionName = "Dev_V1.0.0.1"
 
 #Hardware limitation :(
 # processLimit = 3 # For i5 8th Gen
-processLimit = 8 # i7 11Gen at min
+processLimit = 16 # i7 11Gen at min
 
 
 
